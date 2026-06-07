@@ -8,3 +8,7 @@
 /* Compact Vision metrics cards only. */
 .vision-metrics .info{min-height:95px;padding:14px 18px}.vision-metrics .info strong{margin-bottom:6px}.vision-metrics .info p{line-height:1.45}
 @media (max-width:640px){.vision-metrics .info{min-height:88px;padding:13px 16px}}
+
+/* Contact ribbon is part of page 16, not a detached contact page. */
+.contact-ribbon{margin-top:22px;border-color:rgba(216,173,97,.24);background:linear-gradient(135deg,rgba(216,173,97,.12),rgba(255,255,255,.035));color:rgba(246,248,251,.86)}
+.contact-ribbon a{font-weight:800;color:var(--gold2)}
