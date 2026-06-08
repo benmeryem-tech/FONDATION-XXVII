@@ -30,3 +30,8 @@
 /* Manifesto image must remain uncropped so the child is fully visible. */
 .manifesto-card img{object-fit:contain;width:100%;height:auto;max-height:none;background:#140d0a}
 @media (max-width:1020px){.manifesto-card img{max-height:none}}
+
+/* Hard fix: manifesto poster must render as a full uncropped image below the text. */
+.manifesto-card{grid-template-columns:1fr!important;align-items:start!important;overflow:visible!important}
+.manifesto-card img{width:min(100%,760px)!important;height:auto!important;max-height:none!important;object-fit:contain!important;justify-self:center!important;display:block!important}
+@media (max-width:640px){.manifesto-card img{width:100%!important}}
