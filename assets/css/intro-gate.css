@@ -1,0 +1,10 @@
+/* Fondation XXVII — cinematic intro gate */
+body.intro-active{overflow:hidden!important}
+#intro-gate{position:fixed;inset:0;z-index:999999;background:#211D1A;overflow:hidden;display:grid;place-items:center;isolation:isolate}
+#intro-gate video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.96) contrast(1.04);transform:scale(1.01)}
+#intro-gate:before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(circle at center,rgba(248,241,231,.06),transparent 42%),linear-gradient(180deg,rgba(33,29,26,.18),rgba(33,29,26,.44));pointer-events:none}
+.intro-welcome{position:relative;z-index:2;padding:18px 28px;text-align:center;font-family:Impact,'Arial Black',Inter,sans-serif;font-size:clamp(42px,9vw,118px);line-height:.95;letter-spacing:.02em;text-transform:uppercase;color:#fff6e9;-webkit-text-stroke:1px rgba(184,100,60,.78);text-shadow:0 5px 0 rgba(33,29,26,.58),0 16px 34px rgba(33,29,26,.55),0 0 22px rgba(184,100,60,.36);transform:rotate(-2deg);mix-blend-mode:screen;animation:introTagIn 1.2s ease .35s both}
+#intro-gate.intro-leaving{opacity:0;filter:blur(16px);transform:scale(1.025);transition:opacity 1.45s ease,filter 1.45s ease,transform 1.45s ease}
+.page{opacity:1;transition:opacity 1.2s ease}body.intro-active .page{opacity:0;pointer-events:none}
+@keyframes introTagIn{from{opacity:0;filter:blur(10px);transform:translateY(28px) rotate(-4deg) scale(.96)}to{opacity:1;filter:blur(0);transform:translateY(0) rotate(-2deg) scale(1)}}
+@media(max-width:640px){.intro-welcome{font-size:clamp(38px,14vw,78px);padding:14px 18px;-webkit-text-stroke:.7px rgba(184,100,60,.78)}}
