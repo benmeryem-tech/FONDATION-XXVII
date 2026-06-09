@@ -500,3 +500,97 @@
 .manifesto-card .lead{
   opacity:.78!important;
 }
+
+/* Curatorial hierarchy — major chapters and quieter secondary content */
+.section{
+  position:relative;
+}
+.section:not(.hero):not(.gallery):not(.manifesto-section)::after{
+  content:"";
+  display:block;
+  width:100%;
+  max-width:1180px;
+  height:1px;
+  margin:42px auto 0;
+  background:linear-gradient(90deg,transparent,rgba(143,63,37,.22),transparent);
+}
+#page6,
+#page7,
+#page8,
+#page9{
+  background:rgba(255,250,242,.48)!important;
+  border-color:rgba(143,63,37,.14)!important;
+}
+#page6 .section-title,
+#page7 .section-title,
+#page8 .section-title,
+#page9 .section-title{
+  font-size:clamp(28px,3.6vw,48px)!important;
+}
+#page6 .info,
+#page7 .info,
+#page8 .info,
+#page9 .info{
+  box-shadow:none!important;
+  background:transparent!important;
+  border-left:0!important;
+  border-right:0!important;
+  border-top:1px solid rgba(143,63,37,.34)!important;
+  border-bottom:1px solid rgba(143,63,37,.18)!important;
+  border-radius:0!important;
+}
+#page6 .info strong,
+#page7 .info strong,
+#page8 .info strong,
+#page9 .info strong{
+  font-size:14px!important;
+  letter-spacing:.09em!important;
+}
+#page6 .info p,
+#page7 .info p,
+#page8 .info p,
+#page9 .info p{
+  font-size:14px!important;
+  line-height:1.82!important;
+}
+.gallery .section-title,
+.manifesto-card .section-title,
+.vision-section .section-title,
+.institute-missions-section .section-title,
+#page16 .section-title{
+  font-size:clamp(34px,4.8vw,68px)!important;
+}
+.slide figcaption,
+.visual-card figcaption,
+.section-visual figcaption{
+  padding:14px 16px!important;
+  line-height:1.45!important;
+}
+.visual-card,
+.section-visual,
+.slider{
+  border:1px solid rgba(143,63,37,.18)!important;
+  background:#fffaf2!important;
+}
+.visual-card img,
+.section-visual img{
+  border-bottom:1px solid rgba(143,63,37,.18)!important;
+}
+.hero .side .card{
+  background:transparent!important;
+  box-shadow:none!important;
+  border-top:1px solid rgba(143,63,37,.28)!important;
+  border-bottom:1px solid rgba(143,63,37,.16)!important;
+  border-left:0!important;
+  border-right:0!important;
+  border-radius:0!important;
+}
+.stats .stat{
+  background:rgba(255,250,242,.56)!important;
+  border:1px solid rgba(143,63,37,.16)!important;
+}
+@media(max-width:760px){
+  .section:not(.hero):not(.gallery):not(.manifesto-section)::after{
+    margin-top:30px;
+  }
+}
