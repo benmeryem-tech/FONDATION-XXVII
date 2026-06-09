@@ -265,3 +265,48 @@
   line-height:1.7!important;
   color:rgba(33,29,26,.72)!important;
 }
+
+/* Team and contact as institutional closing chapter */
+#page16{
+  background:linear-gradient(180deg,rgba(255,250,242,.94),rgba(248,241,231,.72))!important;
+  border:1px solid rgba(143,63,37,.22)!important;
+}
+#page16 .section-title{
+  font-family:Cinzel,serif!important;
+  text-transform:uppercase!important;
+  letter-spacing:.04em!important;
+  color:#5a321f!important;
+}
+#page16 .lead{
+  max-width:840px!important;
+  color:rgba(33,29,26,.72)!important;
+  line-height:1.85!important;
+}
+#page16 .info{
+  background:#fffaf2!important;
+  border:1px solid rgba(143,63,37,.26)!important;
+  border-top:3px solid rgba(143,63,37,.72)!important;
+  box-shadow:0 16px 34px rgba(33,29,26,.055)!important;
+}
+#page16 .info strong{
+  font-family:Cinzel,serif!important;
+  text-transform:uppercase!important;
+  letter-spacing:.04em!important;
+  color:#5a321f!important;
+}
+#page16 .info p{
+  color:rgba(33,29,26,.72)!important;
+  line-height:1.7!important;
+}
+#page16::after{
+  content:"Fondation XXVII · Geste · Regard · Transmission";
+  display:block;
+  margin-top:42px;
+  padding-top:24px;
+  border-top:1px solid rgba(143,63,37,.34);
+  font-family:Cinzel,serif;
+  font-size:13px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#8f3f25;
+}
