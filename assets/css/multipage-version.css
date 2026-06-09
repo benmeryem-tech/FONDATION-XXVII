@@ -845,3 +845,48 @@
   color:rgba(33,29,26,.76)!important;
 }
 
+
+/* Vision page — direct governance panel override */
+.governance-soft-panel{
+  background:
+    linear-gradient(180deg, rgba(255,250,242,.98), rgba(255,241,229,.82))!important;
+  border:1px solid rgba(184,100,60,.22)!important;
+  border-radius:28px!important;
+  box-shadow:0 18px 46px rgba(33,29,26,.055)!important;
+  color:#211d1a!important;
+}
+
+.governance-soft-panel h3,
+.governance-soft-panel blockquote,
+.governance-soft-panel p{
+  color:#5a321f!important;
+}
+
+.governance-soft-panel blockquote{
+  background:rgba(255,255,255,.34)!important;
+  border-top:1px solid rgba(184,100,60,.30)!important;
+  border-bottom:1px solid rgba(184,100,60,.20)!important;
+  color:#5a321f!important;
+}
+
+.governance-soft-panel .governance-copy p{
+  color:rgba(33,29,26,.76)!important;
+}
+
+.governance-soft-panel .governance-grid .info{
+  background:
+    linear-gradient(180deg, rgba(255,250,242,.98), rgba(255,236,218,.72))!important;
+  border:1px solid rgba(184,100,60,.24)!important;
+  border-top:3px solid rgba(216,154,114,.72)!important;
+  border-radius:22px!important;
+  box-shadow:0 12px 30px rgba(33,29,26,.05)!important;
+}
+
+.governance-soft-panel .governance-grid .info strong{
+  color:#8f3f25!important;
+}
+
+.governance-soft-panel .governance-grid .info p{
+  color:rgba(33,29,26,.76)!important;
+}
+
