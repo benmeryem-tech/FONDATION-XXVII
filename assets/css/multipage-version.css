@@ -491,3 +491,52 @@
   }
 }
 
+
+/* Institut page — seminar video beside title */
+.page-institut .institute-hero-grid,
+.institute-hero-video-section .institute-hero-grid{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr)!important;
+  gap:34px!important;
+  align-items:center!important;
+  margin-bottom:34px!important;
+}
+
+.page-institut .institute-video-card,
+.institute-hero-video-section .institute-video-card{
+  margin:0!important;
+  padding:14px!important;
+  border:1px solid rgba(143,63,37,.24)!important;
+  border-radius:28px!important;
+  background:rgba(255,250,242,.86)!important;
+  box-shadow:0 18px 46px rgba(33,29,26,.10)!important;
+}
+
+.page-institut .institute-video-card video,
+.institute-hero-video-section .institute-video-card video{
+  width:100%!important;
+  aspect-ratio:16/9!important;
+  display:block!important;
+  object-fit:cover!important;
+  border-radius:20px!important;
+  background:#211d1a!important;
+}
+
+.page-institut .institute-video-card figcaption,
+.institute-hero-video-section .institute-video-card figcaption{
+  padding:13px 8px 2px!important;
+  font-family:Cinzel,serif!important;
+  font-size:12px!important;
+  line-height:1.45!important;
+  letter-spacing:.04em!important;
+  color:#5a321f!important;
+  text-align:center!important;
+}
+
+@media(max-width:900px){
+  .page-institut .institute-hero-grid,
+  .institute-hero-video-section .institute-hero-grid{
+    grid-template-columns:1fr!important;
+  }
+}
+
