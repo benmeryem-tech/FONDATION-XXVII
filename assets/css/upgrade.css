@@ -75,3 +75,47 @@
     display:none!important;
   }
 }
+
+/* Editorial hero refinement */
+.hero .panel{
+  position:relative;
+}
+.hero-statement{
+  margin:18px 0 14px;
+  max-width:780px;
+  font-family:Cinzel,serif;
+  font-size:clamp(32px,5vw,72px);
+  line-height:1.02;
+  letter-spacing:.015em;
+  color:#5a321f;
+}
+.hero-lead{
+  max-width:620px!important;
+  font-size:18px!important;
+  line-height:1.7!important;
+  color:rgba(33,29,26,.72)!important;
+}
+.hero-signature{
+  display:inline-flex;
+  margin-top:24px;
+  padding:12px 18px;
+  border-top:1px solid rgba(143,63,37,.55);
+  border-bottom:1px solid rgba(143,63,37,.35);
+  font-family:Cinzel,serif;
+  font-size:13px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#8f3f25;
+}
+@media(max-width:760px){
+  .hero-statement{
+    font-size:clamp(34px,11vw,58px);
+  }
+  .hero-lead{
+    font-size:16px!important;
+  }
+  .hero-signature{
+    letter-spacing:.11em;
+    font-size:11px;
+  }
+}
