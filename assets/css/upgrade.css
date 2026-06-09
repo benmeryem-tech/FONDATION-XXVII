@@ -977,3 +977,57 @@ button{
   display:none!important;
   background:none!important;
 }
+
+/* Header logo relocation — logo becomes hero institutional mark */
+.brand-text-only{
+  padding-left:0!important;
+}
+.brand-logo{
+  display:none!important;
+}
+
+/* remove previous artificial empty hero visual */
+.hero .side .card:first-child::before{
+  content:none!important;
+  display:none!important;
+  background:none!important;
+}
+
+/* real visible logo card */
+.hero-logo-card{
+  display:grid!important;
+  place-items:center!important;
+  text-align:center!important;
+  min-height:260px!important;
+  padding:30px!important;
+  background:
+    radial-gradient(circle at center,rgba(255,250,242,.98),rgba(248,241,231,.74) 62%,rgba(143,63,37,.10))!important;
+  border:1px solid rgba(143,63,37,.28)!important;
+  box-shadow:0 18px 46px rgba(33,29,26,.08)!important;
+}
+.hero-card-logo{
+  display:block!important;
+  width:min(280px,88%)!important;
+  max-height:230px!important;
+  height:auto!important;
+  object-fit:contain!important;
+  opacity:1!important;
+  visibility:visible!important;
+  margin:0 auto 18px!important;
+  filter:contrast(1.08) saturate(1.02)!important;
+}
+.hero-logo-caption{
+  font-family:Cinzel,serif!important;
+  font-size:12px!important;
+  letter-spacing:.16em!important;
+  text-transform:uppercase!important;
+  color:#8f3f25!important;
+}
+@media(max-width:760px){
+  .hero-logo-card{
+    min-height:220px!important;
+  }
+  .hero-card-logo{
+    width:min(230px,86%)!important;
+  }
+}
