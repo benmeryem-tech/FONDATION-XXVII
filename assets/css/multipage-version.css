@@ -540,3 +540,85 @@
   }
 }
 
+
+/* Academy page — Sohan example refined band */
+.page-academy .academy-example-card,
+.academy-example-card{
+  position:relative!important;
+  overflow:hidden!important;
+  padding:34px 38px!important;
+  border:1px solid rgba(143,63,37,.26)!important;
+  border-left:7px solid #b8643c!important;
+  border-radius:28px!important;
+  background:
+    radial-gradient(420px 220px at 92% 20%, rgba(216,154,114,.24), transparent 66%),
+    linear-gradient(135deg, rgba(255,250,242,.96), rgba(248,241,231,.82))!important;
+  box-shadow:0 18px 46px rgba(33,29,26,.08)!important;
+  color:#211d1a!important;
+}
+
+.page-academy .academy-example-card::before,
+.academy-example-card::before{
+  content:"Sohan";
+  position:absolute;
+  right:24px;
+  bottom:-14px;
+  font-family:Cinzel,serif;
+  font-size:clamp(54px,8vw,120px);
+  line-height:1;
+  color:rgba(184,100,60,.09);
+  pointer-events:none;
+}
+
+.page-academy .academy-example-card strong,
+.academy-example-card strong{
+  display:inline-flex!important;
+  align-items:center!important;
+  width:max-content!important;
+  margin-bottom:16px!important;
+  padding:8px 13px!important;
+  border-radius:999px!important;
+  background:rgba(184,100,60,.12)!important;
+  border:1px solid rgba(184,100,60,.28)!important;
+  font-family:Inter,sans-serif!important;
+  font-size:11px!important;
+  font-weight:900!important;
+  letter-spacing:.16em!important;
+  text-transform:uppercase!important;
+  color:#8f3f25!important;
+}
+
+.page-academy .academy-example-card p,
+.academy-example-card p{
+  position:relative!important;
+  z-index:1!important;
+  max-width:880px!important;
+  margin:0!important;
+  font-size:16px!important;
+  line-height:1.82!important;
+  color:rgba(33,29,26,.78)!important;
+}
+
+.page-academy .academy-example-card p::first-letter,
+.academy-example-card p::first-letter{
+  font-family:Cinzel,serif;
+  font-size:34px;
+  line-height:.8;
+  color:#8f3f25;
+}
+
+@media(max-width:760px){
+  .page-academy .academy-example-card,
+  .academy-example-card{
+    padding:28px 24px!important;
+    border-left-width:5px!important;
+    border-radius:24px!important;
+  }
+
+  .page-academy .academy-example-card p,
+  .academy-example-card p{
+    font-size:15px!important;
+    line-height:1.74!important;
+  }
+}
+
