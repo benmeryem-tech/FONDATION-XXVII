@@ -218,3 +218,50 @@
   text-transform:uppercase;
   color:#8f3f25;
 }
+
+/* Elevated governance as institutional circles */
+.governance-block{
+  background:linear-gradient(180deg,rgba(255,250,242,.92),rgba(248,241,231,.7))!important;
+  border:1px solid rgba(143,63,37,.22)!important;
+  padding:44px!important;
+}
+.governance-block h3{
+  font-family:Cinzel,serif!important;
+  text-transform:uppercase!important;
+  letter-spacing:.04em!important;
+  color:#5a321f!important;
+}
+.governance-block blockquote{
+  max-width:900px!important;
+  margin:26px 0!important;
+  padding:28px 0!important;
+  border-top:1px solid rgba(143,63,37,.42)!important;
+  border-bottom:1px solid rgba(143,63,37,.28)!important;
+  font-family:Cinzel,serif!important;
+  font-size:clamp(21px,2.8vw,36px)!important;
+  line-height:1.25!important;
+  color:#5a321f!important;
+}
+.governance-copy p{
+  max-width:880px!important;
+  font-size:15px!important;
+  line-height:1.85!important;
+  color:rgba(33,29,26,.72)!important;
+}
+.governance-grid .info{
+  background:#fffaf2!important;
+  border:1px solid rgba(143,63,37,.26)!important;
+  border-top:3px solid rgba(143,63,37,.72)!important;
+  box-shadow:0 16px 34px rgba(33,29,26,.055)!important;
+}
+.governance-grid .info strong{
+  font-family:Cinzel,serif!important;
+  text-transform:uppercase!important;
+  letter-spacing:.04em!important;
+  color:#5a321f!important;
+}
+.governance-grid .info p{
+  font-size:14px!important;
+  line-height:1.7!important;
+  color:rgba(33,29,26,.72)!important;
+}
