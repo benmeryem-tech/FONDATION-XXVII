@@ -848,3 +848,37 @@ footer{
     font-size:11px!important;
   }
 }
+
+/* Emergency interaction fix — unblock page clicks and gallery */
+#intro-gate.intro-leaving,
+#intro-gate[hidden]{
+  display:none!important;
+  pointer-events:none!important;
+  visibility:hidden!important;
+}
+body:not(.intro-active) #intro-gate{
+  display:none!important;
+  pointer-events:none!important;
+  visibility:hidden!important;
+}
+.page,
+main,
+header,
+nav,
+.slider,
+.slides,
+.slide,
+.slider-btn,
+.dots,
+button,
+a{
+  pointer-events:auto!important;
+}
+.slider-btn,
+.dots button,
+.nav a,
+a,
+button{
+  position:relative!important;
+  z-index:20!important;
+}
