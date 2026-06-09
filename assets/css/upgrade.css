@@ -970,3 +970,10 @@ button{
     right:10px!important;
   }
 }
+
+/* Cleanup — remove artificial hero image pseudo-element */
+.hero .side .card:first-child::before{
+  content:none!important;
+  display:none!important;
+  background:none!important;
+}
