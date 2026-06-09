@@ -745,3 +745,59 @@
   }
 }
 
+
+/* Vision page — soft orange premium cards only */
+.page-vision-soft .vision-section .info,
+.page-vision-soft .vision-metrics .info,
+.page-vision-soft .governance-grid .info{
+  position:relative!important;
+  overflow:hidden!important;
+  background:
+    linear-gradient(180deg, rgba(255,250,242,.94), rgba(255,238,222,.72))!important;
+  border:1px solid rgba(184,100,60,.26)!important;
+  border-top:3px solid rgba(216,154,114,.78)!important;
+  border-radius:22px!important;
+  box-shadow:
+    0 14px 34px rgba(33,29,26,.055),
+    inset 0 1px 0 rgba(255,255,255,.72)!important;
+}
+
+.page-vision-soft .vision-section .info::after,
+.page-vision-soft .vision-metrics .info::after,
+.page-vision-soft .governance-grid .info::after{
+  content:"";
+  position:absolute;
+  right:-42px;
+  top:-42px;
+  width:120px;
+  height:120px;
+  border-radius:999px;
+  background:rgba(216,154,114,.13);
+  pointer-events:none;
+}
+
+.page-vision-soft .vision-section .info strong,
+.page-vision-soft .vision-metrics .info strong,
+.page-vision-soft .governance-grid .info strong{
+  color:#8f3f25!important;
+}
+
+.page-vision-soft .vision-section .info p,
+.page-vision-soft .vision-metrics .info p,
+.page-vision-soft .governance-grid .info p{
+  color:rgba(33,29,26,.76)!important;
+}
+
+.page-vision-soft .governance-block{
+  background:linear-gradient(180deg,rgba(255,250,242,.86),rgba(248,241,231,.72))!important;
+  border:1px solid rgba(184,100,60,.20)!important;
+  border-radius:28px!important;
+  box-shadow:0 18px 46px rgba(33,29,26,.065)!important;
+}
+
+.page-vision-soft .governance-block blockquote{
+  color:#5a321f!important;
+  border-top-color:rgba(184,100,60,.34)!important;
+  border-bottom-color:rgba(184,100,60,.22)!important;
+}
+
