@@ -1186,3 +1186,15 @@ button{
     gap:16px!important;
   }
 }
+
+/* Footer after Maison XXVII removal */
+.refined-footer{
+  grid-template-columns:1.2fr 1fr!important;
+  max-width:900px!important;
+}
+@media(max-width:760px){
+  .refined-footer{
+    grid-template-columns:1fr!important;
+    max-width:none!important;
+  }
+}
