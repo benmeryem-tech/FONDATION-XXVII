@@ -594,3 +594,96 @@
     margin-top:30px;
   }
 }
+
+/* Final editorial polish — reduce template feeling */
+body{
+  background:
+    radial-gradient(circle at top left,rgba(143,63,37,.055),transparent 34%),
+    linear-gradient(180deg,#fbf6ee,#f8f1e7)!important;
+}
+.page{
+  max-width:1240px!important;
+}
+.section{
+  background:rgba(255,250,242,.62)!important;
+}
+.section:nth-of-type(even){
+  background:rgba(255,255,255,.38)!important;
+}
+.section-title{
+  max-width:920px!important;
+}
+.section-title::after{
+  content:"";
+  display:block;
+  width:72px;
+  height:1px;
+  margin-top:18px;
+  background:rgba(143,63,37,.58);
+}
+.hero .section-title::after,
+.manifesto-card .section-title::after{
+  display:none!important;
+}
+.info,
+.brown,
+.card{
+  transition:none!important;
+}
+.grid3 .info,
+.grid2 .info{
+  min-height:unset!important;
+}
+#page6 .grid2,
+#page7 .grid2,
+#page8 .grid3,
+#page9 .grid2{
+  align-items:stretch!important;
+}
+#page6 .info,
+#page7 .info,
+#page8 .info,
+#page9 .info{
+  padding:18px 0!important;
+}
+.visual-card,
+.section-visual{
+  overflow:hidden!important;
+}
+.visual-card img,
+.section-visual img,
+.slide img{
+  object-fit:cover!important;
+}
+.manifesto-card img{
+  filter:saturate(.82) contrast(1.05) brightness(.92)!important;
+}
+.hero .eyebrow{
+  color:#8f3f25!important;
+  letter-spacing:.18em!important;
+}
+.hero h1{
+  color:#211d1a!important;
+}
+.hero-lead{
+  max-width:560px!important;
+}
+.side .card h3{
+  font-size:14px!important;
+}
+.stats{
+  gap:8px!important;
+}
+.stat strong{
+  color:#5a321f!important;
+}
+.footer,
+footer{
+  border-top:1px solid rgba(143,63,37,.22)!important;
+}
+@media(max-width:760px){
+  .section-title::after{
+    width:52px;
+    margin-top:14px;
+  }
+}
