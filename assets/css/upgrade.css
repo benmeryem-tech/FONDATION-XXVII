@@ -418,3 +418,85 @@
     padding:22px!important;
   }
 }
+
+/* Museum-grade finishing — silence, hierarchy, restraint */
+.section-title{
+  font-family:Cinzel,serif!important;
+  text-transform:uppercase!important;
+  letter-spacing:.045em!important;
+  color:#5a321f!important;
+}
+.page-num{
+  letter-spacing:.18em!important;
+  text-transform:uppercase!important;
+  color:#8f3f25!important;
+}
+.info,
+.brown,
+.card{
+  background:rgba(255,250,242,.78)!important;
+  border:1px solid rgba(143,63,37,.18)!important;
+  box-shadow:0 14px 34px rgba(33,29,26,.045)!important;
+}
+.info strong,
+.brown strong,
+.card h3{
+  font-family:Cinzel,serif!important;
+  text-transform:uppercase!important;
+  letter-spacing:.035em!important;
+  color:#5a321f!important;
+}
+.info p,
+.brown p,
+.card p{
+  color:rgba(33,29,26,.70)!important;
+  line-height:1.75!important;
+}
+.visual-card figcaption,
+.slide figcaption,
+.section-visual figcaption{
+  font-family:Cinzel,serif!important;
+  font-size:12px!important;
+  letter-spacing:.035em!important;
+  color:#5a321f!important;
+  background:rgba(255,250,242,.90)!important;
+  border-top:1px solid rgba(143,63,37,.22)!important;
+}
+.visual-card img,
+.section-visual img,
+.slide img{
+  filter:saturate(.88) contrast(1.03)!important;
+}
+.section::before{
+  content:"";
+  display:block;
+  width:54px;
+  height:1px;
+  margin-bottom:22px;
+  background:rgba(143,63,37,.58);
+}
+.hero::before,
+.gallery::before{
+  display:none!important;
+}
+.grid2 .info:hover,
+.grid3 .info:hover,
+.visual-card:hover{
+  transform:none!important;
+}
+.manifesto-section{
+  background:transparent!important;
+}
+.manifesto-card{
+  background:#211d1a!important;
+  color:#fff6e9!important;
+  border:0!important;
+}
+.manifesto-card .section-title,
+.manifesto-card .page-num,
+.manifesto-card .lead{
+  color:#fff6e9!important;
+}
+.manifesto-card .lead{
+  opacity:.78!important;
+}
