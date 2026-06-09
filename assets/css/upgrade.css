@@ -1030,4 +1030,56 @@ button{
   .hero-card-logo{
     width:min(230px,86%)!important;
   }
+}\n
+/* Footer institutional cleanup */
+.contact-ribbon{
+  display:grid!important;
+  grid-template-columns:1.2fr 1fr 1fr 1fr!important;
+  gap:30px!important;
+  align-items:start!important;
+  padding:30px 34px!important;
+  border-radius:24px!important;
+  background:linear-gradient(180deg,rgba(33,29,26,.96),rgba(33,29,26,.90))!important;
+  color:rgba(255,246,233,.84)!important;
+}
+.contact-ribbon::before,
+.contact-ribbon::after{
+  content:none!important;
+  display:none!important;
+}
+.contact-ribbon > *{
+  margin:0!important;
+}
+.contact-ribbon h3,
+.contact-ribbon strong{
+  display:block!important;
+  margin:0 0 10px!important;
+  font-family:Cinzel,serif!important;
+  font-size:13px!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase!important;
+  color:#fff6e9!important;
+}
+.contact-ribbon p,
+.contact-ribbon a,
+.contact-ribbon span{
+  font-size:13px!important;
+  line-height:1.65!important;
+  color:rgba(255,246,233,.74)!important;
+}
+.contact-ribbon a{
+  text-decoration:underline!important;
+  text-underline-offset:3px!important;
+}
+@media(max-width:900px){
+  .contact-ribbon{
+    grid-template-columns:1fr 1fr!important;
+    gap:22px!important;
+  }
+}
+@media(max-width:560px){
+  .contact-ribbon{
+    grid-template-columns:1fr!important;
+    padding:24px!important;
+  }
 }
