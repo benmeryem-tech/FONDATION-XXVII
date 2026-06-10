@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let index = slides.findIndex((slide) => slide.classList.contains("active"));
     if (index < 0) index = 0;
 
+    let timer = null;
+    const delay = 4200;
+
     function render() {
       slides.forEach((slide, i) => {
         slide.classList.toggle("active", i === index);
@@ -25,26 +28,51 @@ document.addEventListener("DOMContentLoaded", () => {
           dot.addEventListener("click", () => {
             index = i;
             render();
+            restart();
           });
           dots.appendChild(dot);
         });
       }
     }
 
+    function goNext() {
+      index = (index + 1) % slides.length;
+      render();
+    }
+
+    function restart() {
+      if (timer) clearInterval(timer);
+      timer = setInterval(goNext, delay);
+    }
+
     if (prev) {
       prev.addEventListener("click", () => {
         index = (index - 1 + slides.length) % slides.length;
         render();
+        restart();
       });
     }
 
     if (next) {
       next.addEventListener("click", () => {
-        index = (index + 1) % slides.length;
-        render();
+        goNext();
+        restart();
       });
     }
 
+    slider.addEventListener("mouseenter", () => {
+      if (timer) clearInterval(timer);
+    });
+
+    slider.addEventListener("mouseleave", restart);
+
+    slider.addEventListener("touchstart", () => {
+      if (timer) clearInterval(timer);
+    }, { passive: true });
+
+    slider.addEventListener("touchend", restart, { passive: true });
+
     render();
+    restart();
   });
 });
