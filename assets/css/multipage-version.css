@@ -1161,3 +1161,43 @@
   }
 }
 
+
+/* Exposition page — single panel placement */
+.page-exposition .exposition-panel-section,
+.exposition-panel-section{
+  background:linear-gradient(180deg,rgba(255,250,242,.94),rgba(248,241,231,.76))!important;
+  border:1px solid rgba(143,63,37,.18)!important;
+  border-radius:34px!important;
+  box-shadow:0 18px 46px rgba(33,29,26,.065)!important;
+}
+
+.single-exposition-panel{
+  margin:30px 0 0!important;
+  padding:12px!important;
+  border:1px solid rgba(143,63,37,.22)!important;
+  border-radius:28px!important;
+  background:rgba(255,250,242,.88)!important;
+  box-shadow:0 18px 44px rgba(33,29,26,.08)!important;
+  overflow:hidden!important;
+}
+
+.single-exposition-panel img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  border-radius:20px!important;
+  object-fit:contain!important;
+  background:#fff6e9!important;
+}
+
+@media(max-width:760px){
+  .single-exposition-panel{
+    padding:8px!important;
+    border-radius:22px!important;
+  }
+
+  .single-exposition-panel img{
+    border-radius:16px!important;
+  }
+}
+
