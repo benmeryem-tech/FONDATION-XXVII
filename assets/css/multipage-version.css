@@ -1125,3 +1125,39 @@
   }
 }
 
+
+/* Galerie page — next button toward exhibition */
+.page-galerie .galerie-next-link,
+.galerie-next-link{
+  margin-top:40px!important;
+  padding:34px 24px!important;
+  border-radius:30px!important;
+  background:
+    radial-gradient(420px 220px at 12% 12%, rgba(255,177,86,.28), transparent 66%),
+    linear-gradient(135deg, rgba(143,63,37,.94), rgba(216,154,114,.88))!important;
+  box-shadow:0 20px 54px rgba(143,63,37,.18)!important;
+}
+
+.page-galerie .galerie-next-link .btn,
+.galerie-next-link .btn{
+  background:#fff6e9!important;
+  color:#8f3f25!important;
+  border-color:rgba(255,246,233,.82)!important;
+  box-shadow:none!important;
+}
+
+.page-galerie .galerie-next-link .btn:hover,
+.galerie-next-link .btn:hover{
+  background:#211d1a!important;
+  color:#fff6e9!important;
+  border-color:#211d1a!important;
+}
+
+@media(max-width:760px){
+  .page-galerie .galerie-next-link,
+  .galerie-next-link{
+    padding:26px 18px!important;
+    border-radius:24px!important;
+  }
+}
+
