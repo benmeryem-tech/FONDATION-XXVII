@@ -1065,3 +1065,63 @@
   }
 }
 
+
+/* Galerie page — intro encart matching Academy Incubateur style */
+.page-galerie .galerie-street-intro,
+.galerie-street-intro{
+  position:relative!important;
+  overflow:hidden!important;
+  display:block!important;
+  max-width:820px!important;
+  margin:18px 0 30px!important;
+  padding:30px 28px!important;
+  border-radius:30px!important;
+  border:1px solid rgba(143,63,37,.22)!important;
+  border-top:4px solid rgba(255,156,63,.72)!important;
+  background:
+    radial-gradient(260px 180px at 92% 12%, rgba(255,177,86,.34), transparent 68%),
+    radial-gradient(220px 160px at 8% 94%, rgba(184,100,60,.18), transparent 70%),
+    linear-gradient(135deg, rgba(255,250,242,.96), rgba(255,233,205,.78))!important;
+  box-shadow:0 18px 44px rgba(33,29,26,.08)!important;
+  color:rgba(33,29,26,.80)!important;
+  font-size:18px!important;
+  line-height:1.78!important;
+}
+
+.page-galerie .galerie-street-intro::before,
+.galerie-street-intro::before{
+  content:"Galerie";
+  position:absolute;
+  right:22px;
+  bottom:-8px;
+  font-family:Cinzel,serif;
+  font-size:clamp(46px,7vw,92px);
+  line-height:1;
+  color:rgba(143,63,37,.08);
+  pointer-events:none;
+}
+
+.page-galerie .galerie-street-intro::after,
+.galerie-street-intro::after{
+  content:"";
+  position:absolute;
+  right:-38px;
+  bottom:-42px;
+  width:150px;
+  height:150px;
+  border-radius:999px;
+  border:1px solid rgba(143,63,37,.18);
+  background:rgba(255,255,255,.18);
+  pointer-events:none;
+}
+
+@media(max-width:760px){
+  .page-galerie .galerie-street-intro,
+  .galerie-street-intro{
+    padding:26px 22px!important;
+    border-radius:24px!important;
+    font-size:16px!important;
+    line-height:1.68!important;
+  }
+}
+
