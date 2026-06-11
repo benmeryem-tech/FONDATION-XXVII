@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let timer = null;
     let firstTimer = null;
-    const firstDelay = 1200;
-    const delay = 2800;
+    const firstDelay = 850;
+    const delay = 2400;
 
     function render() {
       slides.forEach((slide, i) => {
