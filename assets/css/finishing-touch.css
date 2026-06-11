@@ -55,6 +55,50 @@
   box-shadow: 0 14px 32px rgba(0,0,0,.12);
 }
 
+/* Galerie — apparition plus lisse et moins brutale */
+.gallery .slider .slides{
+  overflow:hidden;
+  background:radial-gradient(circle at center, rgba(216,173,97,.08), rgba(4,7,12,.18));
+}
+
+.gallery .slider .slide{
+  opacity:0!important;
+  transform:translateX(18px) scale(1.018)!important;
+  filter:blur(2px) saturate(.98)!important;
+  transition:
+    opacity 1.15s cubic-bezier(.22,.61,.36,1),
+    transform 1.15s cubic-bezier(.22,.61,.36,1),
+    filter 1.15s cubic-bezier(.22,.61,.36,1)!important;
+  will-change:opacity, transform, filter;
+}
+
+.gallery .slider .slide.active{
+  opacity:1!important;
+  transform:translateX(0) scale(1)!important;
+  filter:blur(0) saturate(1.02)!important;
+}
+
+.gallery .slider .slide img{
+  transform:scale(1.015);
+  transition:transform 2.8s cubic-bezier(.22,.61,.36,1), filter 1.15s ease!important;
+  will-change:transform;
+}
+
+.gallery .slider .slide.active img{
+  transform:scale(1.035);
+}
+
+.gallery .slider .slide figcaption{
+  opacity:0;
+  transform:translateY(10px);
+  transition:opacity .85s ease .28s, transform .85s ease .28s;
+}
+
+.gallery .slider .slide.active figcaption{
+  opacity:1;
+  transform:translateY(0);
+}
+
 /* Signature discrète en pied de page */
 .page::after {
   content: "Fondation XXVII — Geste · Regard · Transmission";
@@ -72,8 +116,13 @@
   .hero .panel, .hero .side, .section .page-title, .section .lead, .quote {
     animation: none;
   }
-  .btn:hover, .member:hover, .card:hover {
-    transform: none;
+  .btn:hover, .member:hover, .card:hover,
+  .gallery .slider .slide,
+  .gallery .slider .slide img,
+  .gallery .slider .slide figcaption {
+    transform: none!important;
+    transition: none!important;
+    filter: none!important;
   }
 }
 
