@@ -3,45 +3,52 @@ body.portal-active{ overflow:hidden!important; }
 
 #portal-gate{
   position:fixed; inset:0; z-index:999999;
-  background:#dcdad7; /* fond neutre pour le reveal du logo (vidéo carrée) */
+  background:#dcdad7; /* fond neutre pour le reveal du logo */
   overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .portal-video{
-  position:absolute; inset:0;
-  width:100%; height:100%;
-  object-fit:cover;
+  position:absolute;
+  left:50%; top:50%;
+  width:100vw; height:100vh;
+  max-width:100vw; max-height:100vh;
+  transform:translate(-50%,-50%);
+  object-fit:contain;
+  object-position:center center;
   display:block;
   opacity:0;
   transition:opacity .9s ease;
+  background:#dcdad7;
 }
 .portal-video.active{ opacity:1; }
 #portal-v2.active{ z-index:2; } /* le portail repasse devant + au-dessus du fond clair */
 
-/* Vignette douce pour fondre les bords dans le noir */
+/* Vignette très légère : conserve l'image entière sans la recadrer */
 #portal-gate::before{
   content:"";
   position:absolute; inset:0;
-  background:radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%);
+  background:radial-gradient(ellipse at center, rgba(0,0,0,0) 68%, rgba(0,0,0,.18) 100%);
   pointer-events:none;
   z-index:1;
 }
 
-/* Transition de sortie : fondu + très léger zoom, pour prolonger
-   le mouvement du portail vers la page */
+/* Transition de sortie : fondu + léger zoom, sans recadrage agressif */
 #portal-gate{
   transition: opacity 1.4s cubic-bezier(.22,.61,.36,1), filter 1.4s ease;
 }
 #portal-gate video{
-  transition: transform 1.6s cubic-bezier(.22,.61,.36,1);
+  transition: transform 1.6s cubic-bezier(.22,.61,.36,1), opacity .9s ease;
 }
 #portal-gate.portal-leaving{
   opacity:0;
-  filter:blur(6px);
+  filter:blur(5px);
   pointer-events:none;
 }
 #portal-gate.portal-leaving video.active{
-  transform:scale(1.18);
+  transform:translate(-50%,-50%) scale(1.04);
 }
 
 /* La page apparaît doucement derrière le portail */
@@ -58,7 +65,19 @@ body.portal-active .page{ opacity:0; }
 }
 .portal-skip:hover{ background:#fff6e91a; color:#fff; }
 
+@media (max-width:760px){
+  .portal-video{
+    width:100vw;
+    height:100vh;
+    object-fit:contain;
+  }
+  .portal-skip{
+    right:16px;
+    bottom:18px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce){
   #portal-gate, #portal-gate video{ transition-duration:.4s; }
-  #portal-gate.portal-leaving video{ transform:none; }
+  #portal-gate.portal-leaving video{ transform:translate(-50%,-50%); }
 }
