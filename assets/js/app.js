@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (index < 0) index = 0;
 
     let timer = null;
-    const delay = 4200;
+    let firstTimer = null;
+    const firstDelay = 1200;
+    const delay = 2800;
 
     function render() {
       slides.forEach((slide, i) => {
@@ -40,9 +42,28 @@ document.addEventListener("DOMContentLoaded", () => {
       render();
     }
 
+    function stopTimers() {
+      if (firstTimer) {
+        clearTimeout(firstTimer);
+        firstTimer = null;
+      }
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+    }
+
     function restart() {
-      if (timer) clearInterval(timer);
+      stopTimers();
       timer = setInterval(goNext, delay);
+    }
+
+    function startInitialAutoplay() {
+      stopTimers();
+      firstTimer = setTimeout(() => {
+        goNext();
+        timer = setInterval(goNext, delay);
+      }, firstDelay);
     }
 
     if (prev) {
@@ -60,19 +81,15 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    slider.addEventListener("mouseenter", () => {
-      if (timer) clearInterval(timer);
-    });
+    slider.addEventListener("mouseenter", stopTimers);
 
     slider.addEventListener("mouseleave", restart);
 
-    slider.addEventListener("touchstart", () => {
-      if (timer) clearInterval(timer);
-    }, { passive: true });
+    slider.addEventListener("touchstart", stopTimers, { passive: true });
 
     slider.addEventListener("touchend", restart, { passive: true });
 
     render();
-    restart();
+    startInitialAutoplay();
   });
 });
