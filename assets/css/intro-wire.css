@@ -1,0 +1,2 @@
+/* temporary wiring helper: import this after upgrade.css when index.html is connected */
+@import url('./intro-gate.css');
