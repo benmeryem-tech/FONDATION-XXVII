@@ -1,0 +1,356 @@
+/* =========================================================
+   FONDATION XXVII — Niveau Cartier
+   Inspiration : espace généreux, typographie souveraine,
+   navigation aérée, zéro surcharge visuelle.
+   ========================================================= */
+
+/* ── Variables raffinées ──────────────────────────────── */
+:root {
+  --c-bg:    #F7F2EB;
+  --c-text:  #1C1815;
+  --c-muted: rgba(28,24,21,.58);
+  --c-gold:  #8F3F25;
+  --c-gold2: #B8643C;
+  --c-line:  rgba(28,24,21,.10);
+  --c-white: #FFFFFF;
+  --c-radius: 0px;            /* Cartier ne ronde pas, il tranche */
+  --c-font-serif: 'Cinzel', serif;
+  --c-font-sans:  'Inter', sans-serif;
+}
+
+/* ── Reset fond & corps ───────────────────────────────── */
+body {
+  background: var(--c-bg) !important;
+  color: var(--c-text) !important;
+  font-family: var(--c-font-sans) !important;
+  -webkit-font-smoothing: antialiased;
+}
+body::before { display: none !important; }
+
+.page {
+  max-width: 1440px !important;
+  padding-top: 0 !important;
+  padding-bottom: 80px !important;
+}
+
+/* ── Navigation Cartier ───────────────────────────────── */
+.topbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
+  background: rgba(247,242,235,.96) !important;
+  backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid var(--c-line) !important;
+  padding: 0 clamp(16px,3vw,48px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 24px !important;
+  height: 72px !important;
+  box-shadow: none !important;
+}
+
+.brand-lockup {
+  font-family: var(--c-font-serif) !important;
+  font-size: 13px !important;
+  letter-spacing: .28em !important;
+  text-transform: uppercase !important;
+  color: var(--c-text) !important;
+  font-weight: 700 !important;
+  gap: 12px !important;
+}
+
+.nav {
+  display: flex !important;
+  gap: 0 !important;
+  flex-wrap: nowrap !important;
+}
+.nav a {
+  padding: 8px 14px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--c-muted) !important;
+  font-size: 11px !important;
+  letter-spacing: .16em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: color .2s ease !important;
+  position: relative !important;
+}
+.nav a::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 14px !important;
+  right: 100% !important;
+  height: 1px !important;
+  background: var(--c-gold) !important;
+  transition: right .28s ease !important;
+  opacity: 1 !important;
+}
+.nav a:hover { color: var(--c-text) !important; }
+.nav a:hover::after { right: 14px !important; }
+
+/* ── Hero Cartier : espace + phrase forte ─────────────── */
+.hero {
+  display: grid !important;
+  grid-template-columns: 1fr 420px !important;
+  gap: 0 !important;
+  align-items: stretch !important;
+  min-height: calc(100vh - 72px) !important;
+  padding: 0 !important;
+  border-bottom: 1px solid var(--c-line) !important;
+}
+
+.panel {
+  border: none !important;
+  border-right: 1px solid var(--c-line) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  padding: clamp(48px,6vw,96px) clamp(24px,4vw,72px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+.panel::after { display: none !important; }
+
+.eyebrow {
+  font-size: 10px !important;
+  letter-spacing: .32em !important;
+  text-transform: uppercase !important;
+  color: var(--c-gold) !important;
+  margin-bottom: 28px !important;
+  font-weight: 600 !important;
+}
+
+h1, .hero h1 {
+  font-family: var(--c-font-serif) !important;
+  font-size: clamp(48px, 7vw, 110px) !important;
+  line-height: .92 !important;
+  letter-spacing: -.01em !important;
+  color: var(--c-text) !important;
+  margin: 0 0 32px !important;
+}
+
+.hero-statement {
+  font-family: var(--c-font-serif) !important;
+  font-size: clamp(18px, 2.2vw, 30px) !important;
+  color: var(--c-muted) !important;
+  line-height: 1.5 !important;
+  margin: 0 0 40px !important;
+  max-width: 56ch !important;
+}
+
+.hero-lead {
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+  color: var(--c-muted) !important;
+  max-width: 48ch !important;
+  margin-bottom: 48px !important;
+}
+
+.hero-actions {
+  display: flex !important;
+  gap: 16px !important;
+  flex-wrap: wrap !important;
+}
+
+.hero-signature {
+  display: block !important;
+  margin-top: auto !important;
+  padding-top: 48px !important;
+  font-size: 10px !important;
+  letter-spacing: .32em !important;
+  text-transform: uppercase !important;
+  color: var(--c-gold) !important;
+  border-top: 1px solid var(--c-line) !important;
+}
+
+/* Colonne droite du hero */
+.side {
+  padding: clamp(32px,4vw,64px) clamp(24px,3vw,48px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 24px !important;
+  background: var(--c-white) !important;
+}
+
+.card {
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 0 !important;
+}
+
+.card h3 {
+  font-family: var(--c-font-serif) !important;
+  font-size: 13px !important;
+  letter-spacing: .24em !important;
+  text-transform: uppercase !important;
+  color: var(--c-gold) !important;
+  margin: 0 0 20px !important;
+}
+
+.stats { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 1px !important; background: var(--c-line) !important; }
+.stat { background: var(--c-white) !important; padding: 20px !important; border-radius: 0 !important; border: none !important; }
+.stat span { font-size: 9px !important; letter-spacing: .24em !important; text-transform: uppercase !important; color: var(--c-muted) !important; margin-bottom: 8px !important; display: block !important; }
+.stat strong { font-size: 18px !important; font-family: var(--c-font-serif) !important; color: var(--c-text) !important; letter-spacing: .02em !important; }
+
+.hero-logo-card img { border-radius: 0 !important; width: 100% !important; height: auto !important; }
+
+/* ── Boutons ──────────────────────────────────────────── */
+.btn {
+  padding: 14px 28px !important;
+  border-radius: 0 !important;
+  border: 1px solid var(--c-text) !important;
+  background: var(--c-text) !important;
+  color: var(--c-bg) !important;
+  font-size: 11px !important;
+  letter-spacing: .2em !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  transition: background .25s ease, color .25s ease, transform .2s ease !important;
+  box-shadow: none !important;
+}
+.btn:hover {
+  background: var(--c-gold) !important;
+  border-color: var(--c-gold) !important;
+  color: #fff !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+.btn.alt {
+  background: transparent !important;
+  color: var(--c-text) !important;
+  border: 1px solid var(--c-line) !important;
+}
+.btn.alt:hover {
+  border-color: var(--c-gold) !important;
+  color: var(--c-gold) !important;
+  background: transparent !important;
+}
+
+/* ── Citation ─────────────────────────────────────────── */
+.quote {
+  border-radius: 0 !important;
+  border: none !important;
+  border-left: 2px solid var(--c-gold) !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  font-family: var(--c-font-serif) !important;
+  font-size: clamp(18px, 2vw, 26px) !important;
+  color: var(--c-text) !important;
+  padding: 24px 0 24px 32px !important;
+  margin: 48px clamp(24px,4vw,72px) !important;
+  font-weight: 600 !important;
+  animation: none !important;
+}
+
+/* ── Sections intérieures ─────────────────────────────── */
+.section {
+  padding: clamp(48px,6vw,96px) clamp(24px,4vw,72px) 0 !important;
+  animation: none !important;
+}
+.section-title, .page-title {
+  font-family: var(--c-font-serif) !important;
+  letter-spacing: .04em !important;
+  color: var(--c-text) !important;
+}
+.lead { color: var(--c-muted) !important; }
+.eyebrow, .page-num, .section-intro, .stat span, .member .role {
+  color: var(--c-gold) !important;
+}
+
+/* ── Cards info ───────────────────────────────────────── */
+.info {
+  border-radius: 0 !important;
+  border: 1px solid var(--c-line) !important;
+  background: var(--c-white) !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  color: var(--c-text) !important;
+}
+.info strong { color: var(--c-gold) !important; }
+.info p { color: var(--c-muted) !important; }
+
+.info:hover {
+  border-color: var(--c-gold) !important;
+  background: var(--c-white) !important;
+}
+
+/* ── Membres équipe ───────────────────────────────────── */
+.member {
+  border-radius: 0 !important;
+  border: 1px solid var(--c-line) !important;
+  background: var(--c-white) !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+.member:hover {
+  transform: none !important;
+  border-color: var(--c-gold) !important;
+  box-shadow: none !important;
+}
+.member h4 { color: var(--c-text) !important; }
+
+/* ── Footer ───────────────────────────────────────────── */
+.footer {
+  border-radius: 0 !important;
+  margin-top: 80px !important;
+  border: none !important;
+  border-top: 1px solid var(--c-line) !important;
+  background: var(--c-text) !important;
+  color: rgba(247,242,235,.7) !important;
+  padding: 40px clamp(24px,4vw,72px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+.footer a { color: rgba(247,242,235,.9) !important; }
+
+/* ── Page d'après le hero — supprime le double head ──── */
+.page::after { display: none !important; }
+
+/* ── Galerie / slider ─────────────────────────────────── */
+.slider {
+  border-radius: 0 !important;
+  border: 1px solid var(--c-line) !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+.slide img { border-radius: 0 !important; border: none !important; }
+.slider-btn {
+  border-radius: 0 !important;
+  border: 1px solid var(--c-line) !important;
+  background: rgba(247,242,235,.9) !important;
+  color: var(--c-text) !important;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 1020px) {
+  .hero {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+  .panel { border-right: none !important; border-bottom: 1px solid var(--c-line) !important; }
+  .side { background: var(--c-bg) !important; }
+  .nav { flex-wrap: wrap !important; }
+}
+
+@media (max-width: 640px) {
+  .topbar { height: auto !important; padding: 14px 16px !important; flex-direction: column !important; align-items: flex-start !important; }
+  .quote { margin: 32px 16px !important; padding: 16px 0 16px 20px !important; }
+  .btn { padding: 12px 20px !important; }
+}
