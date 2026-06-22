@@ -1,0 +1,176 @@
+/* Finitions — Fondation XXVII */
+
+@keyframes xxvii-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero .panel,
+.hero .side,
+.section .page-title,
+.section .lead,
+.quote {
+  animation: xxvii-rise 0.9s cubic-bezier(.22,.61,.36,1) both;
+}
+
+.hero .side { animation-delay: .12s; }
+.section .lead { animation-delay: .08s; }
+.quote { animation-delay: .15s; }
+
+/* Liens de nav : transition douce */
+.nav a {
+  position: relative;
+  transition: color .25s ease;
+}
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 100%;
+  bottom: -4px;
+  height: 1px;
+  background: currentColor;
+  opacity: .6;
+  transition: right .3s ease;
+}
+.nav a:hover::after,
+.nav a:focus-visible::after {
+  right: 0;
+}
+
+/* Boutons : micro-interaction */
+.btn {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+}
+
+/* Cartes galerie / équipe : légère élévation au survol */
+.member, .card, .gallery a, .gallery img {
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.member:hover, .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0,0,0,.12);
+}
+
+/* Signature discrète en pied de page */
+.page::after {
+  content: "Fondation XXVII — Geste · Regard · Transmission";
+  display: block;
+  text-align: center;
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: .35;
+  padding: 2.5rem 0 1.5rem;
+}
+
+/* Réduction du mouvement pour accessibilité */
+@media (prefers-reduced-motion: reduce) {
+  .hero .panel, .hero .side, .section .page-title, .section .lead, .quote {
+    animation: none;
+  }
+  .btn:hover, .member:hover, .card:hover {
+    transform: none;
+  }
+}
+
+/* Page Contact — grille emails / réseaux + QR */
+.contact-sub{
+  margin:3.5rem 0 1.25rem;
+  font-family:'Cinzel', serif;
+  font-weight:700;
+  letter-spacing:.06em;
+  font-size:1.15rem;
+  opacity:.85;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:1.1rem;
+}
+
+.contact-card{
+  display:flex; align-items:center; gap:1rem;
+  padding:1rem 1.15rem;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:14px;
+  background:rgba(255,255,255,.5);
+  text-decoration:none;
+  color:inherit;
+  transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease, background .3s ease;
+}
+.contact-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 28px rgba(0,0,0,.10);
+  border-color:rgba(0,0,0,.14);
+  background:rgba(255,255,255,.8);
+}
+
+.contact-qr{
+  width:56px; height:56px;
+  border-radius:8px;
+  flex:none;
+  background:#fff;
+  padding:4px;
+  border:1px solid rgba(0,0,0,.06);
+  transition:width .3s ease, height .3s ease;
+}
+.contact-card:hover .contact-qr{
+  width:96px; height:96px;
+}
+
+.contact-card-text{
+  display:flex; flex-direction:column; gap:.25rem;
+  min-width:0;
+}
+.contact-label{
+  font-size:.7rem; letter-spacing:.18em; text-transform:uppercase;
+  opacity:.5;
+}
+.contact-value{
+  font-weight:600;
+  font-size:.95rem;
+  word-break:break-word;
+}
+
+@media (max-width:540px){
+  .contact-card{ flex-direction:column; align-items:flex-start; text-align:left; }
+  .contact-qr, .contact-card:hover .contact-qr{ width:120px; height:120px; }
+}
+
+/* Page Contact — mise en page deux colonnes avec vidéo */
+.contact-layout{
+  display:flex;
+  gap:2.5rem;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+.contact-main{
+  flex:1 1 480px;
+  min-width:0;
+}
+.contact-visual{
+  flex:1 1 320px;
+  max-width:440px;
+  align-self:center;
+  aspect-ratio:736/400;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 18px 40px rgba(0,0,0,.14);
+  border:1px solid rgba(0,0,0,.06);
+}
+.contact-visual video{
+  width:100%; height:100%;
+  object-fit:contain;
+  background:#0c0a08;
+  display:block;
+}
+
+@media (max-width:880px){
+  .contact-layout{ flex-direction:column; }
+  .contact-visual{ max-width:100%; order:-1; }
+}

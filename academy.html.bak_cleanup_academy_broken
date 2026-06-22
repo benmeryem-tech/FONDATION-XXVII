@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XXVII Academy — Fondation XXVII</title>
+<meta name="description" content="La Fondation XXVII accompagne les enfants, les jeunes créateurs et les artistes émergents à travers l'art, l'éducation et la transmission.">
+<meta property="og:title" content="Fondation XXVII — Transmission culturelle par l'art">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="assets/css/upgrade.css">
+<link rel="stylesheet" href="assets/css/multipage-version.css">
+<link rel="stylesheet" href="editorial-model-upgrade.css">
+<link rel="stylesheet" href="assets/css/finishing-touch.css">
+<link rel="stylesheet" href="assets/css/cartier-level.css">
+<link rel="stylesheet" href="assets/css/prestige.css">
+<link rel="stylesheet" href="assets/css/academy-step.css">
+</head>
+<body class="page-academy">
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="page">
+
+<div class="xxvii-ticker">
+  <div class="xxvii-ticker-inner">
+    <span><em>Fondation XXVII</em>L'art pour révéler les talents</span>
+    <span><em>Geneva · Paris · São Paulo · Shanghai · Tokyo</em>Une fondation internationale en naissance</span>
+    <span><em>Academy</em>Premier programme d'ateliers · ouverture annoncée</span>
+    <span><em>Rejoindre</em>partnerships@fondationxxvii.org</span>
+    <span><em>Vision</em>L'art comme langage universel de transmission</span>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="brand-lockup brand-text-only"><span>Fondation XXVII</span></div>
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="index.html">Accueil</a>
+    <a href="manifeste.html">Manifeste</a>
+    <a href="institut.html">Institut XXVII</a>
+    <a href="academy.html">Academy</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="mecenat.html">Mécénat</a>
+    <a href="equipe.html">Maison XXVII</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main id="main" class="multipage-main">
+
+<section class="section" id="page5">
+  <div class="page-num">Academy</div>
+  <h2 class="section-title" style="white-space:nowrap;">XXVII ACADEMY</h2>
+  <p class="lead section-intro" style="font-weight:600;font-size:1.15em;margin-top:0.2em;margin-bottom:1.2em;">Incubateur d'artistes</p>
+  <p class="lead section-intro academy-incubateur-lead">Un incubateur d'artistes dédié aux enfants et jeunes talents, fondé sur le mentorat intergénérationnel, l'exigence artistique et l'ouverture internationale. Ici, l'art n'est pas un loisir.</p>
+
+<figure class="visual-card academy-video-top-tam video-card">
+      <video class="academy-video" autoplay muted loop playsinline preload="metadata" aria-label="Le contact de l'enfant avec l'artiste">
+        <source src="assets/video/contact-enfant-artiste.mp4" type="video/mp4">
+        Votre navigateur ne peut pas lire cette vidéo.
+      </video>
+      <figcaption>Le premier face-à-face avec l'œuvre commence souvent dans le silence du regard.</figcaption>
+    </figure>
+
+  <div class="academy-model-strip" aria-label="Modèle pédagogique XXVII">
+    <div class="academy-model-icon" aria-hidden="true"></div>
+    <div class="academy-model-text">
+      <strong>Notre modèle : mentorat intergénérationnel</strong>
+      <p>Un artiste confirmé accompagne un enfant ou un jeune talent dans la durée. Une enfant révèle un artiste. Transmission inversée, co-inspiration, regards croisés : deux générations qui se rencontrent. La transmission est au cœur du parcours, dans un dialogue où l'expérience rencontre l'élan créatif.</p>
+    </div>
+  </div>
+
+  <div class="academy-expositions-block">
+    <div class="academy-block-kicker">Brique expositions</div>
+    <p class="lead section-intro academy-expositions-lead">Des expositions où des enfants et artistes émergents sont exposés au même niveau que les artistes professionnels.</p>
+    
+  </div>
+
+  <div class="visual-grid academy-visuals">
+    <figure class="visual-card academy-exposition-poster">
+      <img src="assets/img/enfant-regarde-enfant.png" alt="Enfant face à une œuvre monumentale en galerie" loading="lazy" decoding="async">
+      <figcaption>Affiche de l’exposition internationale 2026 — Un dialogue entre les maîtres et la nouvelle génération.</figcaption>
+    </figure>
+    
+    <figure class="visual-card video-card">
+      <video class="academy-video" autoplay muted loop playsinline preload="metadata" aria-label="L'atelier des enfants, lieu d'exigence et de métamorphose">
+        <source src="assets/video/atelier-enfants.mp4" type="video/mp4">
+        Votre navigateur ne peut pas lire cette vidéo.
+      </video>
+      <figcaption>L'atelier comme lieu d'exigence, de patience et de métamorphose.</figcaption>
+    </figure>
+    <figure class="visual-card video-card">
+      <video class="academy-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/academy-street-art.jpg" aria-label="Jeune artiste créant hors les murs">
+        <source src="grok-video-db164b81-4487-42cb-8712-42ea4e502f87%20(3).mp4" type="video/mp4">
+        Votre navigateur ne peut pas lire cette vidéo.
+      </video>
+      <figcaption>Sortir de l'atelier pour rencontrer les formes du monde contemporain.</figcaption>
+    </figure>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="brown academy-example-card">
+    <strong>Exemple</strong>
+    <p>Sohan, 6 ans, lauréat de la première édition, peint depuis l'âge de deux ans. Curieux et plein de vie, il transforme tout ce qu'il voit en couleur et en mouvement. Ses toiles racontent ce que ses mots ne savaient pas encore dire. L'art l'a aidé à se concentrer, à apaiser son énergie et à découvrir la beauté du partage.</p>
+  </div>
+</section>
+
+<div class="page-next-link academy-next-link">
+  <a class="btn" href="galerie.html">Continuer vers la galerie</a>
+</div>
+</main>
+</div>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/prestige.js"></script>
+
+<style id="tam-academy-model-center-only">
+/* TAM — centrage strict du bandeau marron Academy uniquement */
+
+.academy-model-strip{
+  display:block !important;
+  width:520px !important;
+  max-width:86vw !important;
+  margin:28px auto 26px auto !important;
+  padding:20px 28px !important;
+  position:relative !important;
+  left:0 !important;
+  right:0 !important;
+  transform:none !important;
+  box-sizing:border-box !important;
+}
+
+.academy-model-strip .academy-model-icon{
+  display:none !important;
+}
+
+.academy-model-strip .academy-model-text{
+  display:block !important;
+  width:100% !important;
+  max-width:100% !important;
+  margin:0 auto !important;
+  text-align:left !important;
+}
+
+.academy-model-strip .academy-model-text strong{
+  display:block !important;
+  margin:0 0 8px 0 !important;
+  font-size:15px !important;
+  line-height:1.25 !important;
+}
+
+.academy-model-strip .academy-model-text p{
+  display:block !important;
+  margin:0 !important;
+  width:100% !important;
+  max-width:100% !important;
+  font-size:13px !important;
+  line-height:1.45 !important;
+}
+
+/* Bloc Brique expositions centré sous le bandeau */
+.academy-expositions-block{
+  display:block !important;
+  width:760px !important;
+  max-width:88vw !important;
+  margin:22px auto 26px auto !important;
+  text-align:center !important;
+  position:relative !important;
+  left:0 !important;
+  right:0 !important;
+  transform:none !important;
+}
+
+.academy-expositions-block .academy-block-kicker,
+.academy-expositions-block .academy-expositions-lead{
+  text-align:center !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+</style>
+
+</body>
+</html>

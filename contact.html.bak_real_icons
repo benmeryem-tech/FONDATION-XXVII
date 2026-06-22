@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Fondation XXVII</title>
+<meta name="description" content="La Fondation XXVII accompagne les enfants, les jeunes créateurs et les artistes émergents à travers l’art, l’éducation et la transmission.">
+<meta property="og:title" content="Fondation XXVII — Transmission culturelle par l’art">
+<meta property="og:description" content="La Fondation XXVII accompagne les enfants, les jeunes créateurs et les artistes émergents à travers l’art, l’éducation et la transmission.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="grok-image-b3504fb1-696f-4ca2-b0f3-4447067c842b%20(1).jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="grok-image-b3504fb1-696f-4ca2-b0f3-4447067c842b%20(1).jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="assets/css/upgrade.css">
+<link rel="stylesheet" href="assets/css/multipage-version.css">
+<link rel="stylesheet" href="assets/css/intro-wire.css">
+<link rel="stylesheet" href="editorial-model-upgrade.css">
+<link rel="stylesheet" href="assets/css/finishing-touch.css">
+<link rel="stylesheet" href="assets/css/cartier-level.css">
+<link rel="stylesheet" href="assets/css/prestige.css">
+<!-- <script src="assets/js/intro-controller.js" defer></script> -->
+  <link rel="stylesheet" href="assets/css/contact-final.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="page">
+
+<div class="xxvii-ticker">
+  <div class="xxvii-ticker-inner">
+    <span><em>Fondation XXVII</em>L'art pour révéler les talents</span>
+    <span><em>Geneva · Paris · São Paulo · Shanghai · Tokyo</em>Une fondation internationale en naissance</span>
+    <span><em>Academy</em>Premier programme d'ateliers · ouverture annoncée</span>
+    <span><em>Rejoindre</em>partnerships@fondationxxvii.org</span>
+    <span><em>Vision</em>L'art comme langage universel de transmission</span>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="brand-lockup brand-text-only"><span>Fondation XXVII</span></div>
+  <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="manifeste.html">Manifeste</a>
+      <a href="institut.html">Institut XXVII</a>
+      <a href="academy.html">Academy</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="mecenat.html">Mécénat</a>
+      <a href="equipe.html">Maison XXVII</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<main class="contact-final">
+  <section class="contact-hero-clean" aria-label="Contact Fondation XXVII">
+    <div class="contact-copy-clean">
+      <div class="contact-kicker">Contact Fondation XXVII</div>
+      <h1 class="contact-title-clean">CONTACT</h1>
+      <p class="contact-intro-clean">
+        Pour toute demande officielle, partenariat, mécénat ou échange institutionnel avec la Fondation XXVII.
+      </p>
+
+      <div class="contact-card-unique">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&margin=4&color=2b2420&bgcolor=ffffff&data=mailto%3Acontact%40fondationxxvii.org" alt="QR code pour contacter la Fondation XXVII">
+        <div class="contact-card-meta">
+          <span class="label">Email de la Fondation</span>
+          <a class="mail" href="mailto:contact@fondationxxvii.org">contact@fondationxxvii.org</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-media-clean">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="assets/video/grok-video-3bce61ec-b414-4c07-97f1-6f5c2c69ca34.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <section class="contact-social-clean" aria-label="Suivre la Fondation">
+  <h2 class="contact-social-title">Suivre la Fondation</h2>
+
+  <div class="contact-social-grid">
+    <div class="contact-social-item">
+      <span class="contact-social-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path fill="currentColor" d="M13.4 21v-8h2.8l.4-3.2h-3.2V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.5c-.3 0-1.3-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.3H8v3.2h2.8v8z"/>
+        </svg>
+      </span>
+      <div class="contact-social-text">
+        <span class="platform">Facebook</span>
+        <span class="handle">/fondationxxvii</span>
+      </div>
+    </div>
+
+    <div class="contact-social-item">
+      <span class="contact-social-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <rect x="4.2" y="4.2" width="15.6" height="15.6" rx="4.2" ry="4.2" fill="none" stroke="currentColor" stroke-width="1.9"/>
+          <circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.9"/>
+          <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+        </svg>
+      </span>
+      <div class="contact-social-text">
+        <span class="platform">Instagram</span>
+        <span class="handle">@fondationxxvii</span>
+      </div>
+    </div>
+
+    <div class="contact-social-item">
+      <span class="contact-social-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <rect x="4" y="4" width="16" height="16" rx="3" fill="currentColor" opacity=".12"/>
+          <rect x="5.2" y="9.2" width="2.2" height="8.6" fill="currentColor"/>
+          <circle cx="6.3" cy="6.8" r="1.3" fill="currentColor"/>
+          <path fill="currentColor" d="M9.6 9.2h2.1v1.2c.6-.9 1.6-1.5 3.1-1.5 2.3 0 4 1.4 4 4.5v4.4h-2.3v-4c0-1.6-.6-2.5-2-2.5-1.5 0-2.5 1-2.5 3v3.5H9.6z"/>
+        </svg>
+      </span>
+      <div class="contact-social-text">
+        <span class="platform">LinkedIn</span>
+        <span class="handle">Fondation XXVII</span>
+      </div>
+    </div>
+
+    <div class="contact-social-item">
+      <span class="contact-social-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <rect x="3.2" y="6.2" width="17.6" height="11.6" rx="3.2" fill="currentColor"/>
+          <path d="M10.2 9.2l5.2 2.8-5.2 2.8z" fill="#fffaf4"/>
+        </svg>
+      </span>
+      <div class="contact-social-text">
+        <span class="platform">YouTube</span>
+        <span class="handle">@fondationxxvii</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+</div>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/prestige.js"></script>
+</body>
+</html>

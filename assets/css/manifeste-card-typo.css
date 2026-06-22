@@ -1,0 +1,24 @@
+/* TAM — Manifeste : suppression titre + typographie harmonisée */
+.page-manifeste .manifesto-card{
+  align-items:end !important;
+}
+
+.page-manifeste .manifesto-card .page-num{
+  color:#b8643c !important;
+  font-family:Inter,system-ui,sans-serif !important;
+  font-size:11px !important;
+  letter-spacing:.24em !important;
+  text-transform:uppercase !important;
+  font-weight:800 !important;
+  margin-bottom:14px !important;
+}
+
+
+
+@media(max-width:900px){
+  
+}
+
+
+/* TAM — Manifeste : texte éditorial marron et plus stylisé */
+.page-manifeste .manifesto-card .manifeste-card-text-refined,

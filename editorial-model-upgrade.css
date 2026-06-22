@@ -1,0 +1,40 @@
+/* Fondation XXVII — editorial refinement inspired by client PDF model */
+.institute-missions-section{background:#fbf6ee!important;border-color:rgba(88,54,34,.18)!important}
+.institute-missions-section .section-title{font-family:Cinzel,serif!important;letter-spacing:.04em!important;color:#5a321f!important;text-transform:uppercase!important}
+.institute-missions-section .section-intro{max-width:760px!important;color:rgba(33,29,26,.66)!important}
+.mission-editorial-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 42px;margin-top:34px}
+.mission-editorial-card{position:relative;min-height:150px;padding:22px 76px 22px 0;border-top:1px solid rgba(33,29,26,.58);border-bottom:1px solid rgba(33,29,26,.28);background:transparent!important;color:#211d1a!important}
+.mission-editorial-card strong{display:block;margin-bottom:10px;font-family:Cinzel,serif;font-size:18px;letter-spacing:.03em;text-transform:uppercase;color:#5a321f!important}
+.mission-editorial-card p{margin:0;max-width:30ch;font-size:13px;line-height:1.55;color:rgba(33,29,26,.72)!important}
+.mission-editorial-card span{position:absolute;right:0;top:50%;transform:translateY(-50%);width:76px;height:76px;border-radius:76px 0 0 76px;background:#8f3f25;color:#fff6e9;display:grid;place-items:center;font-family:Cinzel,serif;font-size:28px;font-weight:800;box-shadow:inset 9px 0 0 rgba(255,246,233,.18)}
+.mission-editorial-card:after{content:"";position:absolute;right:76px;top:50%;width:34px;height:92px;transform:translateY(-50%);border:2px solid rgba(88,54,34,.42);border-right:0;border-radius:92px 0 0 92px}
+@media(max-width:760px){.mission-editorial-grid{grid-template-columns:1fr}.mission-editorial-card{padding-right:70px}.mission-editorial-card span{width:64px;height:64px;font-size:22px}.mission-editorial-card:after{right:64px;width:24px;height:74px}}
+
+/* ===== Mise à jour éditoriale — juin 2026 ===== */
+:root{--marron:#c07a48;--marron-clair:#d99a6a}
+
+/* Accueil — titre marron sur une ligne + phrase d'intro avec carré marron */
+body .hero .panel h1.hero-oneline{white-space:nowrap!important;color:var(--marron)!important;font-size:clamp(26px,4.2vw,64px)!important;letter-spacing:0!important;line-height:1.04!important}
+.carre-marron{display:inline-block;width:.6em;height:.6em;background:var(--marron);border-radius:3px;margin-right:.45em;vertical-align:middle;box-shadow:0 4px 16px rgba(192,122,72,.45)}
+.hero-statement.hero-stmt-oneline{font-weight:700}
+
+/* Carte "Ce que nous sommes" — valeurs longues lisibles */
+.stat.stat-long strong{font-size:15px;line-height:1.42;letter-spacing:0;font-weight:700;display:block}
+
+/* Brique Maison XXVII (accueil) */
+.maison-xxvii{margin:34px 0}
+.maison-xxvii-head{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,.92fr);gap:30px;align-items:center}
+.maison-xxvii-title{font-family:Cinzel,serif;font-size:clamp(24px,3vw,40px);letter-spacing:-.02em;margin:.18em 0 .5em;color:var(--gold2)}
+.maison-xxvii-lead{color:var(--muted);line-height:1.78;max-width:60ch;margin:0}
+.maison-xxvii-logo{padding:26px;border-radius:28px;background:linear-gradient(180deg,#fffaf0,#f4efe6);border:1px solid rgba(216,173,97,.32);box-shadow:0 24px 80px rgba(0,0,0,.28)}
+.maison-xxvii-logo img{width:100%;height:auto;display:block;border-radius:16px}
+.maison-xxvii-lab{margin-top:26px;padding:28px;border:1px solid rgba(216,173,97,.22);border-radius:28px;background:linear-gradient(135deg,rgba(216,173,97,.10),rgba(255,255,255,.03))}
+.maison-xxvii-lab h3{margin:0 0 12px;font-family:Cinzel,serif;color:var(--gold2);font-size:clamp(20px,2.4vw,30px)}
+.maison-xxvii-lab p{margin:0 0 12px;color:var(--muted);line-height:1.74}
+.maison-xxvii-lab p:last-child{margin-bottom:0}
+@media(max-width:1020px){.maison-xxvii-head{grid-template-columns:1fr}.maison-xxvii-logo{max-width:420px}}
+
+/* Academy — titre sur deux lignes + brique Expositions */
+.academy-two-line .academy-subline{display:block;font-family:Cinzel,serif;font-size:.46em;letter-spacing:.12em;text-transform:uppercase;color:var(--gold2);margin-top:.32em}
+.academy-incubateur-lead{max-width:74ch}
+.academy-expositions-brick{display:block;margin:18px 0 4px;min-height:0}

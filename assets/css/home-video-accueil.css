@@ -1,0 +1,18 @@
+/* TAM — Accueil : vidéo pleine largeur au-dessus du titre */
+.home-hero-video-wrap{
+  width:100%;
+  max-width:1180px;
+  margin:0 auto 34px auto;
+  border-radius:24px;
+  overflow:hidden;
+  background:#0b0b0b;
+  box-shadow:0 28px 80px rgba(0,0,0,.28);
+}
+
+.home-hero-video{
+  width:100%;
+  height:clamp(260px, 42vw, 560px);
+  display:block;
+  object-fit:cover;
+  object-position:center center;
+}

@@ -1,0 +1,261 @@
+.home-hero-video-wrap{
+  display:block !important;
+  width:100% !important;
+  max-width:none !important;
+  margin:0 0 32px 0 !important;
+}
+
+.home-hero-video{
+  display:block !important;
+  width:100% !important;
+  height:clamp(280px, 42vw, 560px) !important;
+  object-fit:cover !important;
+  border-radius:28px !important;
+  background:#ddd7cf !important;
+}
+
+/* force la zone haute de l'accueil en pleine largeur */
+.home-hero,
+.accueil-hero,
+.hero-home,
+.hero-grid,
+.hero-split,
+.home-top-grid,
+.home-intro-grid,
+.section-hero,
+.hero-section{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) !important;
+  column-gap:0 !important;
+}
+
+/* supprime les séparateurs/traits éventuels */
+.home-hero::after,
+.accueil-hero::after,
+.hero-home::after,
+.hero-grid::after,
+.hero-split::after,
+.home-top-grid::after,
+.home-intro-grid::after,
+.section-hero::after,
+.hero-section::after{
+  display:none !important;
+  content:none !important;
+}
+
+/* la vidéo prend toute la ligne */
+.home-hero .home-hero-video-wrap,
+.accueil-hero .home-hero-video-wrap,
+.hero-home .home-hero-video-wrap,
+.hero-grid .home-hero-video-wrap,
+.hero-split .home-hero-video-wrap,
+.home-top-grid .home-hero-video-wrap,
+.home-intro-grid .home-hero-video-wrap,
+.section-hero .home-hero-video-wrap,
+.hero-section .home-hero-video-wrap{
+  grid-column:1 / -1 !important;
+}
+
+/* cache une éventuelle colonne droite résiduelle */
+.home-right,
+.hero-right,
+.hero-aside,
+.home-aside,
+.right-col,
+.right-panel,
+.hero-divider,
+.vertical-divider{
+  display:none !important;
+  border:none !important;
+}
+
+/* TAM FIX — suppression du trait vertical à droite du bloc accueil */
+.home-hero-video-wrap,
+.home-hero-video-wrap *,
+.home-hero,
+.accueil-hero,
+.hero-home,
+.hero-grid,
+.hero-split,
+.home-top-grid,
+.home-intro-grid,
+.section-hero,
+.hero-section,
+.hero-inner,
+.hero-content,
+.hero-copy,
+.hero-media,
+.hero-left,
+.hero-right{
+  border-right:0 !important;
+  border-left:0 !important;
+}
+
+/* neutralise les séparateurs créés en pseudo-éléments */
+.home-hero-video-wrap::before,
+.home-hero-video-wrap::after,
+.home-hero::before,
+.home-hero::after,
+.accueil-hero::before,
+.accueil-hero::after,
+.hero-home::before,
+.hero-home::after,
+.hero-grid::before,
+.hero-grid::after,
+.hero-split::before,
+.hero-split::after,
+.home-top-grid::before,
+.home-top-grid::after,
+.home-intro-grid::before,
+.home-intro-grid::after,
+.section-hero::before,
+.section-hero::after,
+.hero-section::before,
+.hero-section::after,
+.hero-inner::before,
+.hero-inner::after,
+.hero-content::before,
+.hero-content::after{
+  display:none !important;
+  content:none !important;
+  border:0 !important;
+  background:none !important;
+}
+
+/* force la vidéo à rester seule sur toute la largeur utile */
+.home-hero-video-wrap{
+  grid-column:1 / -1 !important;
+  justify-self:stretch !important;
+  align-self:start !important;
+}
+
+/* TAM FINAL — suppression stricte du trait vertical parasite accueil */
+.mission-editorial-card::before,
+.mission-editorial-card::after,
+.xxvii-oeuvre-text::before,
+.xxvii-oeuvre-text::after,
+.hero-divider,
+.vertical-divider,
+.right-panel,
+.hero-aside,
+.home-aside,
+.hero-right,
+.home-right{
+  display:none !important;
+  content:none !important;
+  border:0 !important;
+  background:none !important;
+  box-shadow:none !important;
+}
+
+/* retire toute bordure latérale dans la zone d'accueil */
+.hero,
+.hero *,
+.panel,
+.panel *,
+.home-hero-video-wrap,
+.home-hero-video-wrap *{
+  border-left-color:transparent !important;
+  border-right-color:transparent !important;
+}
+
+/* force la vidéo et le titre à occuper la colonne centrale sans séparation */
+.home-hero-video-wrap{
+  width:100% !important;
+  max-width:1180px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  border:0 !important;
+}
+
+/* TAM — réglage final vidéo accueil + garde-fous panneaux */
+.home-hero-video-wrap{
+  width:min(92vw, 1320px) !important;
+  max-width:1320px !important;
+  margin:0 auto 34px auto !important;
+  border-radius:30px !important;
+  overflow:hidden !important;
+}
+
+.home-hero-video{
+  width:100% !important;
+  height:clamp(360px, 44vw, 640px) !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  border-radius:30px !important;
+}
+
+/* remet des garde-fous sur les panneaux principaux */
+.panel{
+  max-width:1180px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* empêche les blocs texte de devenir trop larges */
+.panel .lead,
+.panel p,
+.hero .lead,
+.hero p{
+  max-width:72ch !important;
+}
+
+/* garde le titre dans une largeur élégante */
+.hero,
+.accueil-hero,
+.hero-home,
+.hero-grid,
+.hero-split,
+.home-top-grid,
+.home-intro-grid,
+.section-hero,
+.hero-section{
+  max-width:1320px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* neutralise les effets trop agressifs du patch précédent uniquement sur les panels */
+.panel,
+.panel *{
+  border-left-color:initial;
+  border-right-color:initial;
+}
+
+/* TAM — garde-fous largeur panneaux accueil après vidéo */
+.xxvii-manifeste-anim,
+.xxvii-human-moment{
+  width:min(92vw, 1180px) !important;
+  max-width:1180px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* le panneau image ne doit plus s'étirer pleine page */
+.xxvii-human-moment{
+  overflow:hidden !important;
+  border-radius:34px !important;
+}
+
+/* image contenue dans le même cadre */
+.xxvii-human-moment img{
+  width:100% !important;
+  max-width:100% !important;
+  display:block !important;
+  object-fit:cover !important;
+}
+
+/* le manifeste garde une largeur institutionnelle */
+.xxvii-manifeste-words{
+  max-width:980px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* évite les panneaux géants sur écran large */
+@media (min-width:1400px){
+  .xxvii-manifeste-anim,
+  .xxvii-human-moment{
+    width:1180px !important;
+  }
+}

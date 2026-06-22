@@ -1,0 +1,31 @@
+/* =========================================================
+   FIX DEFINITIF — OBSERVER NON ROGNÉ
+   Fichier chargé en dernier pour écraser tous les anciens CSS
+   ========================================================= */
+
+.institute-mission-figure-section .mission-quadrant-observer{
+  position: relative !important;
+}
+
+.institute-mission-figure-section .mission-quadrant-observer strong{
+  position: absolute !important;
+  left: 150px !important;
+  top: 56px !important;
+  z-index: 20 !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #7a3b1e !important;
+  font-family: "Cinzel", serif !important;
+  font-size: 21px !important;
+  line-height: 1.1 !important;
+  letter-spacing: .05em !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+}
+
+.institute-mission-figure-section .mission-quadrant-observer p{
+  margin-top: 72px !important;
+  margin-left: 96px !important;
+  max-width: 72% !important;
+}

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accueil — Fondation XXVII</title>
+<meta name="description" content="La Fondation XXVII accompagne les jeunes créateurs à travers l'art, l'éducation et la transmission.">
+<meta property="og:title" content="Fondation XXVII — L'art pour révéler les talents">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="assets/css/upgrade.css">
+<link rel="stylesheet" href="assets/css/multipage-version.css">
+<link rel="stylesheet" href="editorial-model-upgrade.css">
+<link rel="stylesheet" href="assets/css/finishing-touch.css">
+<link rel="stylesheet" href="assets/css/cartier-level.css">
+<link rel="stylesheet" href="assets/css/prestige.css">
+<link rel="stylesheet" href="assets/css/portal-intro.css">
+<link rel="stylesheet" href="assets/css/home-hotfix.css">
+<link rel="stylesheet" href="assets/css/accueil-step1.css">
+<link rel="stylesheet" href="assets/css/home-video-accueil.css">
+  <link rel="stylesheet" href="assets/css/home-hero-video.css">
+</head>
+<body class="page-home">
+
+<div id="portal-gate">
+  <video id="portal-v1" class="portal-video active" autoplay muted playsinline preload="auto" src="assets/video/intro-logo.mp4"></video>
+  <button class="portal-skip" type="button">Passer l'intro</button>
+</div>
+
+<a class="skip" href="#main">Aller au contenu</a>
+
+<div class="page">
+
+  <!-- Ticker -->
+  <div class="xxvii-ticker">
+    <div class="xxvii-ticker-inner">
+      <span><em>Fondation XXVII</em>L'art pour révéler les talents</span>
+      <span><em>Geneva · Paris · São Paulo · Shanghai · Tokyo</em>Une fondation internationale en naissance</span>
+      <span><em>Academy</em>Premier programme d'ateliers · ouverture annoncée</span>
+      <span><em>Rejoindre</em>partnerships@fondationxxvii.org</span>
+      <span><em>Vision</em>L'art comme langage universel de transmission</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="topbar">
+    <div class="brand-lockup brand-text-only"><span>Fondation XXVII</span></div>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="manifeste.html">Manifeste</a>
+      <a href="institut.html">Institut XXVII</a>
+      <a href="academy.html">Academy</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="mecenat.html">Mécénat</a>
+      <a href="equipe.html">Maison XXVII</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. HERO -->
+    <section class="hero" id="page1">
+      <div class="panel">
+        
+<div class="home-hero-video-wrap">
+  <video class="home-hero-video" autoplay muted loop playsinline preload="metadata">
+    <source src="accueil.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="eyebrow">Fondation internationale · Art &amp; Transmission</div>
+        <h1 class="hero-oneline" style="color:#7a3b1e;">FONDATION XXVII</h1>
+      </div>
+      <aside class="side"></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- 2. CHALEUR HUMAINE -->
+<div class="xxvii-human-moment xxvii-reveal">
+      <img src="assets/img/transmission-intergenerationnelle-v2.png" alt="Grand-mère transmettant l'art de la peinture à sa petite-fille — Fondation XXVII">
+      <div class="xxvii-human-overlay">
+        <div class="xxvii-human-text">
+          <div class="xxvii-founders-eyebrow">Ce que nous croyons</div>
+          <p class="xxvii-human-caption">La transmission commence ici — dans ce geste, sur cette feuille, entre ces deux mains.</p>
+          <p class="xxvii-human-sub">La Fondation XXVII ne part pas d'un programme. Elle part d'un enfant qui crée, et d'un adulte qui regarde sans intervenir.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="xxvii-divider-line xxvii-reveal"></div>
+
+    <!-- 3. MANIFESTE ANIMÉ -->
+    <div class="xxvii-manifeste-anim">
+      <div class="xxvii-manifeste-words">
+        <span class="word">L'art</span>
+        <span class="word">n'est</span>
+        <span class="word">pas</span>
+        <span class="word">un</span>
+        <span class="word gold">supplément</span>
+        <span class="word gold">d'âme.</span>
+        <span class="word">C'est</span>
+        <span class="word">une</span>
+        <span class="word">manière</span>
+        <span class="word">d'entrer</span>
+        <span class="word">dans</span>
+        <span class="word gold">le</span>
+        <span class="word gold">monde.</span>
+      </div>
+      <div class="xxvii-manifeste-sub">Fondation XXVII — Manifeste fondateur</div>
+    </div>
+
+    <!-- 5. APPEL -->
+    <div class="xxvii-appel xxvii-reveal">
+      <p class="xxvii-appel-question">Vous croyez que l'art révèle ce que le monde ignore encore de lui-même&nbsp;?</p>
+      <div class="xxvii-appel-actions">
+        <a class="btn" href="contact.html">Rejoindre la Fondation</a>
+        <a class="btn alt" href="manifeste.html">Lire le manifeste</a>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/portal-intro.js"></script>
+<script src="assets/js/prestige.js"></script>
+</body>
+</html>

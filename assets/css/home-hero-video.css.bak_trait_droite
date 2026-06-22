@@ -1,0 +1,70 @@
+.home-hero-video-wrap{
+  display:block !important;
+  width:100% !important;
+  max-width:none !important;
+  margin:0 0 32px 0 !important;
+}
+
+.home-hero-video{
+  display:block !important;
+  width:100% !important;
+  height:clamp(280px, 42vw, 560px) !important;
+  object-fit:cover !important;
+  border-radius:28px !important;
+  background:#ddd7cf !important;
+}
+
+/* force la zone haute de l'accueil en pleine largeur */
+.home-hero,
+.accueil-hero,
+.hero-home,
+.hero-grid,
+.hero-split,
+.home-top-grid,
+.home-intro-grid,
+.section-hero,
+.hero-section{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) !important;
+  column-gap:0 !important;
+}
+
+/* supprime les séparateurs/traits éventuels */
+.home-hero::after,
+.accueil-hero::after,
+.hero-home::after,
+.hero-grid::after,
+.hero-split::after,
+.home-top-grid::after,
+.home-intro-grid::after,
+.section-hero::after,
+.hero-section::after{
+  display:none !important;
+  content:none !important;
+}
+
+/* la vidéo prend toute la ligne */
+.home-hero .home-hero-video-wrap,
+.accueil-hero .home-hero-video-wrap,
+.hero-home .home-hero-video-wrap,
+.hero-grid .home-hero-video-wrap,
+.hero-split .home-hero-video-wrap,
+.home-top-grid .home-hero-video-wrap,
+.home-intro-grid .home-hero-video-wrap,
+.section-hero .home-hero-video-wrap,
+.hero-section .home-hero-video-wrap{
+  grid-column:1 / -1 !important;
+}
+
+/* cache une éventuelle colonne droite résiduelle */
+.home-right,
+.hero-right,
+.hero-aside,
+.home-aside,
+.right-col,
+.right-panel,
+.hero-divider,
+.vertical-divider{
+  display:none !important;
+  border:none !important;
+}

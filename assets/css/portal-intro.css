@@ -1,0 +1,64 @@
+/* Fondation XXVII — Ouverture : portail vidéo */
+body.portal-active{ overflow:hidden!important; }
+
+#portal-gate{
+  position:fixed; inset:0; z-index:999999;
+  background:#dcdad7; /* fond neutre pour le reveal du logo (vidéo carrée) */
+  overflow:hidden;
+}
+
+.portal-video{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  display:block;
+  opacity:0;
+  transition:opacity .9s ease;
+}
+.portal-video.active{ opacity:1; }
+#portal-v2.active{ z-index:2; } /* le portail repasse devant + au-dessus du fond clair */
+
+/* Vignette douce pour fondre les bords dans le noir */
+#portal-gate::before{
+  content:"";
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%);
+  pointer-events:none;
+  z-index:1;
+}
+
+/* Transition de sortie : fondu + très léger zoom, pour prolonger
+   le mouvement du portail vers la page */
+#portal-gate{
+  transition: opacity 1.4s cubic-bezier(.22,.61,.36,1), filter 1.4s ease;
+}
+#portal-gate video{
+  transition: transform 1.6s cubic-bezier(.22,.61,.36,1);
+}
+#portal-gate.portal-leaving{
+  opacity:0;
+  filter:blur(6px);
+  pointer-events:none;
+}
+#portal-gate.portal-leaving video.active{
+  transform:scale(1.18);
+}
+
+/* La page apparaît doucement derrière le portail */
+.page{ opacity:1; transition:opacity 1.6s ease .15s; }
+body.portal-active .page{ opacity:0; }
+
+.portal-skip{
+  position:absolute; bottom:24px; right:28px; z-index:3;
+  font-family:'Inter',sans-serif;
+  font-size:.78rem; letter-spacing:.12em; text-transform:uppercase;
+  color:#fff6e9cc; background:#0006; border:1px solid #fff6e955;
+  padding:.5em 1.1em; border-radius:999px; cursor:pointer;
+  transition:background .2s ease, color .2s ease;
+}
+.portal-skip:hover{ background:#fff6e91a; color:#fff; }
+
+@media (prefers-reduced-motion: reduce){
+  #portal-gate, #portal-gate video{ transition-duration:.4s; }
+  #portal-gate.portal-leaving video{ transform:none; }
+}

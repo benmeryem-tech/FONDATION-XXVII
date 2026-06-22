@@ -1,0 +1,125 @@
+/* TAM — Institut étape 4B : blocs statiques, binômes harmonisés, observer non rogné */
+.page-institut .mission-icon,
+.institute-missions-section .mission-icon,
+.mission-quadrant .mission-icon{
+  display:none !important;
+}
+
+.institute-mission-figure-section,
+.institute-mission-figure-section *,
+.institute-mission-figure-section .mission-ellipse,
+.institute-mission-figure-section .mission-quadrant{
+  animation:none !important;
+  transition:none !important;
+  transform:none !important;
+  filter:none !important;
+}
+
+.institute-mission-figure-section .mission-ellipse{
+  box-shadow:none !important;
+}
+
+.institute-mission-figure-section .mission-quadrant{
+  min-height:250px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:flex-start !important;
+  gap:14px !important;
+  border:0 !important;
+  box-shadow:none !important;
+  overflow:hidden !important;
+  word-break:normal !important;
+  overflow-wrap:break-word !important;
+}
+
+.institute-mission-figure-section .institut-beige-one,
+.institute-mission-figure-section .institut-beige-two{
+  background:#eee5d8 !important;
+  color:#2a211c !important;
+}
+
+.institute-mission-figure-section .institut-brown-one,
+.institute-mission-figure-section .institut-brown-two{
+  background:#b7744b !important;
+  color:#fff8ef !important;
+}
+
+.institute-mission-figure-section .institut-beige-one,
+.institute-mission-figure-section .institut-brown-one{
+  padding:38px 34px 34px 42px !important; /* plus d’air à gauche pour éviter Observer rogné */
+}
+
+.institute-mission-figure-section .institut-beige-two,
+.institute-mission-figure-section .institut-brown-two{
+  padding:38px 38px 34px 34px !important;
+}
+
+.institute-mission-figure-section .mission-quadrant strong{
+  display:block !important;
+  margin:0 0 12px 0 !important;
+  font-family:Cinzel,serif !important;
+  text-transform:uppercase !important;
+  letter-spacing:.05em !important;
+  font-size:clamp(18px,1.8vw,24px) !important;
+  line-height:1.1 !important;
+}
+
+.institute-mission-figure-section .mission-quadrant p{
+  margin:0 !important;
+  font-size:15px !important;
+  line-height:1.55 !important;
+}
+
+.institute-mission-figure-section .institut-beige-one strong,
+.institute-mission-figure-section .institut-beige-two strong{
+  color:#7a3b1e !important;
+}
+
+.institute-mission-figure-section .institut-brown-one strong,
+.institute-mission-figure-section .institut-brown-one p,
+.institute-mission-figure-section .institut-brown-two strong,
+.institute-mission-figure-section .institut-brown-two p{
+  color:#fff8ef !important;
+}
+
+@media (max-width: 900px){
+  .institute-mission-figure-section .institut-beige-one,
+  .institute-mission-figure-section .institut-brown-one,
+  .institute-mission-figure-section .institut-beige-two,
+  .institute-mission-figure-section .institut-brown-two{
+    padding:28px 24px !important;
+    min-height:220px !important;
+  }
+}
+
+/* Correctif final : Observer ne doit plus être rogné */
+.institute-mission-figure-section .mission-quadrant-observer{
+  padding:56px 36px 30px 78px !important;
+  text-align:left !important;
+  align-items:flex-start !important;
+  overflow:hidden !important;
+}
+
+.institute-mission-figure-section .mission-quadrant-observer strong{
+  display:block !important;
+  margin:0 0 14px 18px !important;
+  padding:0 !important;
+  font-size:clamp(17px,1.6vw,24px) !important;
+  line-height:1.1 !important;
+}
+
+.institute-mission-figure-section .mission-quadrant-observer p{
+  margin:0 0 0 18px !important;
+  max-width:82% !important;
+}
+
+@media (max-width: 900px){
+  .institute-mission-figure-section .mission-quadrant-observer{
+    padding:38px 24px 26px 52px !important;
+  }
+  .institute-mission-figure-section .mission-quadrant-observer strong,
+  .institute-mission-figure-section .mission-quadrant-observer p{
+    margin-left:8px !important;
+    max-width:100% !important;
+  }
+}

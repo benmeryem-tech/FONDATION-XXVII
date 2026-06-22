@@ -1,0 +1,157 @@
+/* TAM — Academy : vidéo remontée et bloc mentorat nettoyé */
+.academy-video-top-tam{
+  max-width: 960px !important;
+  margin: 34px auto 48px !important;
+  border-radius: 28px !important;
+  overflow: hidden !important;
+}
+
+.academy-video-top-tam video{
+  width: 100% !important;
+  display: block !important;
+  height: auto !important;
+}
+
+.academy-video-top-tam figcaption{
+  text-align: center !important;
+  color: #7a3b1e !important;
+  font-family: Cinzel, serif !important;
+  letter-spacing: .04em !important;
+}
+
+/* TAM — Academy : vidéo réduite de moitié */
+.academy-video-top-tam{
+  max-width: 480px !important;
+  margin: 28px auto 42px !important;
+}
+
+.academy-video-top-tam video{
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* TAM — Academy : alignement symétrique des 3 objets visuels */
+.academy-visuals,
+.visual-grid.academy-visuals{
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  align-items: stretch !important;
+}
+
+.academy-visuals .visual-card{
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.academy-visuals .visual-card:first-child{
+  grid-column: 1 / -1 !important;
+}
+
+.academy-visuals .visual-card img{
+  width: 100% !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+.academy-visuals .visual-card:first-child img{
+  height: 360px !important;
+}
+
+.academy-visuals .visual-card figcaption{
+  min-height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* =========================================================
+   FIX FINAL — ACADEMY / 3 VISUELS ALIGNÉS
+   Annule le grand visuel seul et remet 3 cartes symétriques
+   ========================================================= */
+
+.academy-visuals,
+.visual-grid.academy-visuals{
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  align-items: stretch !important;
+}
+
+.academy-visuals .visual-card,
+.visual-grid.academy-visuals .visual-card{
+  grid-column: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.academy-visuals .visual-card:first-child,
+.visual-grid.academy-visuals .visual-card:first-child{
+  grid-column: auto !important;
+}
+
+.academy-visuals .visual-card img,
+.visual-grid.academy-visuals .visual-card img{
+  width: 100% !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+.academy-visuals .visual-card:first-child img,
+.visual-grid.academy-visuals .visual-card:first-child img{
+  height: 260px !important;
+}
+
+.academy-visuals .visual-card figcaption,
+.visual-grid.academy-visuals .visual-card figcaption{
+  min-height: 54px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* TAM — Academy : première carte verticale, 3 objets équilibrés */
+.page-academy .academy-visuals{
+  display:grid !important;
+  grid-template-columns: 0.9fr 1fr 1fr !important;
+  gap:18px !important;
+  align-items:stretch !important;
+}
+
+.page-academy .academy-visuals .academy-exposition-poster{
+  width:100% !important;
+  max-width:none !important;
+  padding:10px !important;
+  background:#fff !important;
+  box-shadow:0 14px 28px rgba(0,0,0,.12) !important;
+}
+
+.page-academy .academy-visuals .academy-exposition-poster img{
+  width:100% !important;
+  height:260px !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  background:#f4eee6 !important;
+  display:block !important;
+}
+
+.page-academy .academy-visuals .visual-card:not(.academy-exposition-poster) img,
+.page-academy .academy-visuals .visual-card:not(.academy-exposition-poster) video{
+  width:100% !important;
+  height:260px !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  display:block !important;
+}
+
+.page-academy .academy-visuals .visual-card figcaption{
+  min-height:54px !important;
+}

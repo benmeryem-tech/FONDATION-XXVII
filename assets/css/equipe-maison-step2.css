@@ -1,0 +1,48 @@
+.equipe-maison-page{padding-top:clamp(54px,7vw,92px)!important;}
+.equipe-maison-hero{display:grid!important;grid-template-columns:minmax(0,1.12fr) minmax(280px,420px)!important;gap:clamp(34px,5vw,70px)!important;align-items:center!important;}
+.equipe-maison-copy .section-title{font-size:clamp(42px,6vw,86px)!important;line-height:.96!important;color:#7a3b1e!important;margin-bottom:18px!important;}
+.equipe-maison-subtitle{font-family:Cinzel,serif!important;font-size:clamp(28px,3.2vw,46px)!important;line-height:1.08!important;color:#2a211c!important;margin:0 0 22px!important;}
+.equipe-maison-copy .lead{max-width:850px!important;font-size:clamp(17px,1.25vw,20px)!important;line-height:1.75!important;color:#5f5149!important;}
+.equipe-maison-logo{margin:0!important;padding:26px!important;background:#fffaf4!important;border:1px solid rgba(184,100,60,.18)!important;box-shadow:0 18px 44px rgba(33,29,26,.08)!important;text-align:center!important;}
+.equipe-maison-logo img{width:100%!important;max-width:360px!important;height:auto!important;display:block!important;margin:0 auto 12px!important;}
+.equipe-maison-logo figcaption{font-size:12px!important;line-height:1.35!important;color:#7a6c61!important;letter-spacing:.04em!important;}
+.equipe-maison-lab{margin-top:clamp(34px,5vw,68px)!important;padding:clamp(28px,4vw,46px)!important;background:linear-gradient(135deg,#8e5639,#bb7a52)!important;color:#fff!important;border-radius:0!important;box-shadow:0 22px 54px rgba(184,100,60,.18)!important;}
+.equipe-maison-lab h2{margin:0 0 18px!important;color:#fff!important;font-family:Cinzel,serif!important;font-size:clamp(28px,3.6vw,52px)!important;line-height:1.08!important;}
+.equipe-maison-lab p{max-width:980px!important;color:rgba(255,255,255,.92)!important;font-size:clamp(16px,1.15vw,19px)!important;line-height:1.75!important;}
+@media(max-width:900px){.equipe-maison-hero{grid-template-columns:1fr!important;}}
+
+/* TAM — Maison XXVII : réduction globale des textes */
+.equipe-maison-page .page-num{
+  font-size: 10px !important;
+  letter-spacing: .16em !important;
+}
+
+.equipe-maison-copy .section-title{
+  font-size: clamp(30px, 4vw, 56px) !important;
+  line-height: 1 !important;
+}
+
+.equipe-maison-subtitle{
+  font-size: clamp(20px, 2.3vw, 32px) !important;
+  line-height: 1.12 !important;
+}
+
+.equipe-maison-copy .lead{
+  font-size: clamp(14px, 1vw, 16px) !important;
+  line-height: 1.55 !important;
+}
+
+.equipe-maison-logo figcaption{
+  font-size: 10px !important;
+  line-height: 1.25 !important;
+}
+
+.equipe-maison-lab h2{
+  font-size: clamp(22px, 2.6vw, 36px) !important;
+  line-height: 1.08 !important;
+}
+
+.equipe-maison-lab p{
+  font-size: clamp(14px, 1vw, 16px) !important;
+  line-height: 1.55 !important;
+}

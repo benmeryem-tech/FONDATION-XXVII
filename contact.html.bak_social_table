@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Fondation XXVII</title>
+<meta name="description" content="La Fondation XXVII accompagne les enfants, les jeunes créateurs et les artistes émergents à travers l’art, l’éducation et la transmission.">
+<meta property="og:title" content="Fondation XXVII — Transmission culturelle par l’art">
+<meta property="og:description" content="La Fondation XXVII accompagne les enfants, les jeunes créateurs et les artistes émergents à travers l’art, l’éducation et la transmission.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="grok-image-b3504fb1-696f-4ca2-b0f3-4447067c842b%20(1).jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="grok-image-b3504fb1-696f-4ca2-b0f3-4447067c842b%20(1).jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="assets/css/upgrade.css">
+<link rel="stylesheet" href="assets/css/multipage-version.css">
+<link rel="stylesheet" href="assets/css/intro-wire.css">
+<link rel="stylesheet" href="editorial-model-upgrade.css">
+<link rel="stylesheet" href="assets/css/finishing-touch.css">
+<link rel="stylesheet" href="assets/css/cartier-level.css">
+<link rel="stylesheet" href="assets/css/prestige.css">
+<!-- <script src="assets/js/intro-controller.js" defer></script> -->
+  <link rel="stylesheet" href="assets/css/contact-final.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="page">
+
+<div class="xxvii-ticker">
+  <div class="xxvii-ticker-inner">
+    <span><em>Fondation XXVII</em>L'art pour révéler les talents</span>
+    <span><em>Geneva · Paris · São Paulo · Shanghai · Tokyo</em>Une fondation internationale en naissance</span>
+    <span><em>Academy</em>Premier programme d'ateliers · ouverture annoncée</span>
+    <span><em>Rejoindre</em>partnerships@fondationxxvii.org</span>
+    <span><em>Vision</em>L'art comme langage universel de transmission</span>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="brand-lockup brand-text-only"><span>Fondation XXVII</span></div>
+  <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="manifeste.html">Manifeste</a>
+      <a href="institut.html">Institut XXVII</a>
+      <a href="academy.html">Academy</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="mecenat.html">Mécénat</a>
+      <a href="equipe.html">Maison XXVII</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<main class="contact-final">
+  <section class="contact-hero-clean" aria-label="Contact Fondation XXVII">
+    <div class="contact-copy-clean">
+<h1 class="contact-title-clean">CONTACT</h1>
+      <p class="contact-intro-clean">
+        Pour toute demande officielle, partenariat, mécénat ou échange institutionnel avec la Fondation XXVII.
+      </p>
+
+      <div class="contact-card-unique">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&margin=4&color=2b2420&bgcolor=ffffff&data=mailto%3Acontact%40fondationxxvii.org" alt="QR code pour contacter la Fondation XXVII">
+        <div class="contact-card-meta">
+          <span class="label">Email de la Fondation</span>
+          <a class="mail" href="mailto:contact@fondationxxvii.org">contact@fondationxxvii.org</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-media-clean">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="assets/video/grok-video-3bce61ec-b414-4c07-97f1-6f5c2c69ca34.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <section class="contact-social-clean" aria-label="Suivre la Fondation">
+  <h2 class="contact-social-title">Suivre la Fondation</h2>
+
+  <div class="contact-social-grid">
+    <div class="contact-social-item">
+      <span class="contact-social-icon" aria-hidden="true">
+        <img src="fb.jpg" alt="Facebook">
+      </span>
+      <div class="contact-social-text">
+        <span class="platform">Facebook</span>
+        <span class="handle">/fondationxxvii</span>
+      </div>
+    </div>
+
+    <div class="contact-social-item">
+      <span class="contact-social-icon" aria-hidden="true">
+        <img src="insta.jpg" alt="Instagram">
+      </span>
+      <div class="contact-social-text">
+        <span class="platform">Instagram</span>
+        <span class="handle">@fondationxxvii</span>
+      </div>
+    </div>
+
+    <div class="contact-social-item">
+      <span class="contact-social-icon" aria-hidden="true">
+        <img src="linkedin.jpg" alt="LinkedIn">
+      </span>
+      <div class="contact-social-text">
+        <span class="platform">LinkedIn</span>
+        <span class="handle">Fondation XXVII</span>
+      </div>
+    </div>
+
+    <div class="contact-social-item">
+      <span class="contact-social-icon" aria-hidden="true">
+        <img src="youtube.jpg" alt="YouTube">
+      </span>
+      <div class="contact-social-text">
+        <span class="platform">YouTube</span>
+        <span class="handle">@fondationxxvii</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+</div>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/prestige.js"></script>
+</body>
+</html>

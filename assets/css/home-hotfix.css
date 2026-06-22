@@ -1,0 +1,153 @@
+
+/* TAM — Home final hotfix: slogan on two lines + stats card alignment */
+.page-home .hero{
+  grid-template-columns:minmax(0,1.36fr) minmax(300px,.78fr)!important;
+  gap:30px!important;
+  align-items:end!important;
+}
+
+.page-home .hero .panel{
+  min-width:0!important;
+  overflow:visible!important;
+  padding:44px 34px 42px!important;
+}
+
+.page-home .hero-oneline{
+  white-space:nowrap!important;
+  max-width:100%!important;
+  margin:0 0 14px!important;
+}
+
+.page-home .hero-statement.hero-stmt-oneline{
+  display:block!important;
+  width:min(100%, 760px)!important;
+  max-width:760px!important;
+  white-space:normal!important;
+  font-size:clamp(26px,2.7vw,42px)!important;
+  line-height:1.14!important;
+  letter-spacing:0!important;
+  overflow:visible!important;
+  margin:0!important;
+}
+
+.page-home .hero-statement.hero-stmt-oneline .carre-marron{
+  display:inline-block!important;
+  vertical-align:middle!important;
+  margin-right:14px!important;
+  margin-bottom:4px!important;
+}
+
+.page-home .side{
+  align-self:end!important;
+  min-width:0!important;
+}
+
+.page-home .side .card{
+  padding:22px!important;
+}
+
+.page-home .side .card h3{
+  margin:0 0 14px!important;
+}
+
+.page-home .side .stats{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:1px!important;
+  background:rgba(184,100,60,.18)!important;
+}
+
+.page-home .side .stat{
+  min-width:0!important;
+  padding:14px 12px!important;
+  background:#fff!important;
+  border:none!important;
+  border-radius:0!important;
+}
+
+.page-home .side .stat span{
+  font-size:9px!important;
+  letter-spacing:.22em!important;
+  margin-bottom:8px!important;
+}
+
+.page-home .side .stat strong{
+  display:block!important;
+  font-family:Cinzel, serif!important;
+  font-size:17px!important;
+  line-height:1.28!important;
+  letter-spacing:.01em!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+  hyphens:auto!important;
+}
+
+.page-home .side .stat.stat-long strong{
+  font-size:15px!important;
+  line-height:1.34!important;
+}
+
+.page-home .side .stats .stat:nth-child(2) strong,
+.page-home .side .stats .stat:nth-child(4) strong{
+  font-size:14px!important;
+  line-height:1.34!important;
+}
+
+.page-home .hero-logo-card{
+  margin-top:16px!important;
+}
+
+@media (max-width:1200px){
+  .page-home .hero{
+    grid-template-columns:minmax(0,1.28fr) minmax(280px,.82fr)!important;
+  }
+  .page-home .hero-statement.hero-stmt-oneline{
+    width:min(100%, 690px)!important;
+    max-width:690px!important;
+    font-size:clamp(24px,2.5vw,36px)!important;
+  }
+}
+
+@media (max-width:980px){
+  .page-home .hero{
+    grid-template-columns:1fr!important;
+    align-items:start!important;
+  }
+  .page-home .hero .panel{
+    padding:38px 24px 28px!important;
+  }
+  .page-home .hero-statement.hero-stmt-oneline{
+    width:100%!important;
+    max-width:100%!important;
+    font-size:clamp(24px,5vw,38px)!important;
+  }
+  .page-home .side{
+    align-self:start!important;
+  }
+}
+
+
+/* TAM — Home image fix: grandma and child no longer too close or cropped */
+.page-home .xxvii-human-moment{
+  height: clamp(500px, 52vw, 700px) !important;
+}
+
+.page-home .xxvii-human-moment img{
+  object-fit: cover !important;
+  object-position: center 18% !important;
+  transform: scale(1) !important;
+  filter: saturate(.94) !important;
+}
+
+.page-home .xxvii-human-moment:hover img{
+  transform: scale(1.015) !important;
+}
+
+@media (max-width: 980px){
+  .page-home .xxvii-human-moment{
+    height: clamp(420px, 78vw, 620px) !important;
+  }
+  .page-home .xxvii-human-moment img{
+    object-position: center 14% !important;
+  }
+}

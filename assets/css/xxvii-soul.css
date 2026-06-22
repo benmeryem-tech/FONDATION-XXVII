@@ -1,0 +1,225 @@
+/* =========================================================
+   FONDATION XXVII — Âme Captivante & Élégante
+   Couche finale d’âme : profondeur, souffle, magnétisme discret
+   ========================================================= */
+
+/* — Variables d’âme — */
+:root {
+  --soul-gold: #d8ad61;
+  --soul-ink: #211d1a;
+  --soul-cream: #f8f1e7;
+  --soul-breath: cubic-bezier(0.23, 1.0, 0.32, 1);
+  --soul-shadow: 0 20px 60px -15px rgba(33, 29, 26, 0.12);
+}
+
+/* — Respiration élégante sur les éléments clés — */
+.gold-accent,
+.btn,
+.nav a:hover,
+.info:hover,
+.member:hover {
+  transition: all 420ms var(--soul-breath);
+}
+
+.gold-accent:hover,
+.btn:hover {
+  filter: brightness(1.05) saturate(1.08);
+  transform: translateY(-1px);
+}
+
+/* — Citations avec âme (plus de présence poétique) — */
+.quote {
+  position: relative;
+  padding-left: 42px;
+}
+.quote::before {
+  content: "«";
+  position: absolute;
+  left: 0;
+  top: -8px;
+  font-family: 'Cinzel', serif;
+  font-size: 92px;
+  line-height: 1;
+  color: rgba(184, 100, 60, 0.12);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* — Héros magnétique — */
+.hero .panel {
+  position: relative;
+}
+.hero .panel::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 68px;
+  height: 2px;
+  background: linear-gradient(to right, var(--soul-gold), transparent);
+  opacity: 0.6;
+}
+
+/* — Cartes avec profondeur vivante — */
+.card,
+.info,
+.member,
+.visual-card {
+  transition: transform 520ms var(--soul-breath), 
+              box-shadow 520ms var(--soul-breath),
+              border-color 420ms ease;
+  will-change: transform;
+}
+
+.card:hover,
+.info:hover,
+.member:hover,
+.visual-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--soul-shadow);
+  border-color: rgba(216, 173, 97, 0.28);
+}
+
+/* — Slider galerie plus captivant — */
+.slider {
+  overflow: hidden;
+}
+.slide {
+  transition: opacity 720ms var(--soul-breath), transform 720ms var(--soul-breath);
+}
+.slide.active {
+  transform: scale(1.005);
+}
+
+/* — Manifeste : le texte respire — */
+.manifesto-card .lead {
+  font-size: clamp(17px, 1.65vw, 20px);
+  line-height: 1.88;
+  max-width: 68ch;
+}
+
+/* — Boutons avec pulsation discrète au survol — */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.35),
+    transparent
+  );
+  transition: left 680ms var(--soul-breath);
+}
+.btn:hover::after {
+  left: 250%;
+}
+
+/* — Liens de continuation : invitation douce plutôt que bouton sec — */
+.page-next-link .btn,
+.exposition-next-link .btn,
+.academy-next-link .btn,
+.galerie-next-link .btn,
+.vision-next-link .btn {
+  font-size: 13px;
+  letter-spacing: .18em;
+  padding: 16px 32px;
+  border-radius: 999px;
+  background: transparent !important;
+  color: #5a321f !important;
+  border: 1px solid rgba(143, 63, 37, 0.45) !important;
+  transition: all 420ms var(--soul-breath);
+}
+.page-next-link .btn:hover,
+.exposition-next-link .btn:hover,
+.academy-next-link .btn:hover,
+.galerie-next-link .btn:hover,
+.vision-next-link .btn:hover {
+  background: #5a321f !important;
+  color: #fff6e9 !important;
+  border-color: #5a321f !important;
+  transform: translateY(-2px);
+}
+
+/* — Signature finale avec chaleur humaine — */
+.page::after {
+  content: "Fondation XXVII  ·  Geste · Regard · Transmission";
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: rgba(33,29,26,.28);
+  padding: 42px 24px 28px;
+  border-top: 1px solid rgba(143,63,37,.18);
+  margin-top: 68px;
+  font-family: 'Cinzel', serif;
+}
+
+/* — Petits détails qui font l’âme — */
+.eyebrow {
+  letter-spacing: .34em;
+}
+
+h1, .hero-statement, .section-title {
+  text-wrap: balance;
+}
+
+/* — Manifeste : le chuchotement intime — */
+.manifesto-whisper {
+  margin-top: 28px;
+  max-width: 68ch;
+  font-size: clamp(15.5px, 1.45vw, 17.5px);
+  line-height: 1.82;
+  color: rgba(90, 50, 31, 0.82);
+  font-style: italic;
+  border-left: 2px solid rgba(184, 100, 60, 0.35);
+  padding-left: 22px;
+}
+
+/* — Ouverture du manifeste encore plus respirante — */
+.page-manifeste .manifeste-opening .lead {
+  font-size: clamp(19px, 2.1vw, 23px);
+  line-height: 1.72;
+  max-width: 72ch;
+}
+
+.page-manifeste .manifeste-opening {
+  padding-bottom: 72px;
+}
+
+/* — Focus élégant clavier — */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--soul-gold);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* — Mobile : plus d’air, moins de tension — */
+@media (max-width: 760px) {
+  .quote::before {
+    font-size: 64px;
+    top: -4px;
+  }
+  .card:hover,
+  .info:hover,
+  .member:hover {
+    transform: none;
+  }
+}
+
+/* — Touche finale : le site a désormais une âme — */
+body {
+  /* léger grain subtil pour la profondeur tactile */
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(216,173,97,0.014) 0.8px, transparent 1px);
+  background-size: 5px 5px;
+}
