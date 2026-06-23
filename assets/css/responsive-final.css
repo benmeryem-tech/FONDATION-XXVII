@@ -590,3 +590,39 @@ section,
     padding-right:12px;
   }
 }
+
+/* Fondation XXVII — final title color lock */
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body [class*="title"],
+body [class*="Title"],
+body .section-title,
+body .page-title,
+body .hero-oneline,
+body .hero-statement,
+body .contact-title-clean,
+body .contact-social-title,
+body .equipe-maison-subtitle,
+body .equipe-maison-lab h2,
+body .xxvii-mecenat-title,
+body .xxvii-mecenat-text h1,
+body .xxvii-mecenat-text h2,
+body .xxvii-mecenat-text h3,
+body .xxvii-founders-title,
+body .xxvii-oeuvre-title,
+body .xxvii-timeline-title,
+body .why-block h3,
+body .governance-block h3,
+body .conversion-panel h3,
+body .polish-note strong,
+body .member h4,
+body .card h3,
+body .info strong,
+body .brown strong{
+  color:#7a3b1e !important;
+  -webkit-text-fill-color:#7a3b1e !important;
+}
