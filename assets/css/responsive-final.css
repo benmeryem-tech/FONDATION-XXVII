@@ -84,23 +84,30 @@ section,
 }
 
 .page-manifeste .manifeste-opening{
-  width:min(100%, 980px);
+  width:min(100%, 900px);
   margin-left:auto !important;
   margin-right:auto !important;
   min-height:auto !important;
-  padding:clamp(34px, 5vw, 56px) !important;
+  padding:clamp(16px, 2.2vw, 24px) !important;
 }
 
 .page-manifeste .manifeste-opening .section-title{
-  font-size:clamp(34px, 5vw, 70px) !important;
+  margin-bottom:10px !important;
+  font-size:clamp(26px, 3.4vw, 42px) !important;
+  line-height:1.02 !important;
 }
 
 .page-manifeste .manifeste-opening .lead{
-  max-width:720px !important;
+  max-width:680px !important;
+  font-size:clamp(14px, 1.05vw, 16px) !important;
+  line-height:1.45 !important;
+  margin-bottom:0 !important;
 }
 
 .page-manifeste .manifesto-card-compact{
-  width:min(100%, 760px) !important;
+  width:min(100%, 860px) !important;
+  max-width:100% !important;
+  box-sizing:border-box !important;
   margin-left:auto !important;
   margin-right:auto !important;
   display:flex !important;
@@ -132,8 +139,8 @@ section,
 
 .page-manifeste .manifesto-card-compact img{
   width:auto !important;
-  max-width:min(100%, 460px) !important;
-  max-height:620px !important;
+  max-width:min(100%, 540px) !important;
+  max-height:720px !important;
   justify-self:center !important;
   border-radius:22px !important;
   object-fit:contain !important;
@@ -184,6 +191,19 @@ section,
   height:auto !important;
   object-fit:contain !important;
   border-radius:16px !important;
+}
+
+.page-academy .academy-video-top-tam{
+  max-width:min(100%, 480px) !important;
+}
+
+.page-academy .academy-video-top-tam .academy-video{
+  width:100% !important;
+  height:clamp(260px, 34vw, 380px) !important;
+  max-height:380px !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  display:block !important;
 }
 
 .academy-model-strip,
@@ -398,8 +418,8 @@ section,
   }
 
   .page-manifeste .manifesto-card-compact img{
-    max-width:min(100%, 360px) !important;
-    max-height:520px !important;
+    max-width:min(100%, 380px) !important;
+    max-height:620px !important;
     justify-self:center !important;
   }
 
@@ -428,6 +448,11 @@ section,
 
   .academy-video-top-tam{
     max-width:min(100%, 480px) !important;
+  }
+
+  .page-academy .academy-video-top-tam .academy-video{
+    height:clamp(220px, 62vw, 320px) !important;
+    max-height:320px !important;
   }
 
   .mecenat-final-section .xxvii-mecenat-actions,
