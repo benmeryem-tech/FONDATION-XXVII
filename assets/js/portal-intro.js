@@ -5,13 +5,23 @@ window.addEventListener('load', function () {
   document.body.classList.add('portal-active');
 
   var v1 = document.getElementById('portal-v1');
+  var minIntroMs = 5000;
+  var introStartedAt = Date.now();
+  var closeTimer = null;
 
-  function closePortal() {
+  function closePortalNow() {
     if (gate.dataset.closed) return;
     gate.dataset.closed = '1';
     gate.classList.add('portal-leaving');
     document.body.classList.remove('portal-active');
     setTimeout(function () { gate.remove(); }, 1700);
+  }
+
+  function closePortal() {
+    if (gate.dataset.closed || closeTimer) return;
+    var elapsed = Date.now() - introStartedAt;
+    var remaining = Math.max(0, minIntroMs - elapsed);
+    closeTimer = setTimeout(closePortalNow, remaining);
   }
 
   if (v1) {
@@ -36,12 +46,5 @@ window.addEventListener('load', function () {
   }
 
   // Filet de sécurité
-  setTimeout(closePortal, 8000);
-
-  // N'afficher qu'une fois par session
-  if (sessionStorage.getItem('xxviiPortalSeen')) {
-    closePortal();
-  } else {
-    sessionStorage.setItem('xxviiPortalSeen', '1');
-  }
+  setTimeout(closePortal, 11000);
 });
