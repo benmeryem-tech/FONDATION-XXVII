@@ -100,12 +100,11 @@ section,
 }
 
 .page-manifeste .manifesto-card-compact{
-  width:min(100%, 980px) !important;
+  width:min(100%, 760px) !important;
   margin-left:auto !important;
   margin-right:auto !important;
-  display:grid !important;
-  grid-template-columns:minmax(0, 1.18fr) minmax(190px, 240px) !important;
-  gap:clamp(24px, 4.2vw, 52px) !important;
+  display:flex !important;
+  justify-content:center !important;
   align-items:center !important;
   padding:clamp(24px, 4vw, 38px) !important;
 }
@@ -133,9 +132,9 @@ section,
 
 .page-manifeste .manifesto-card-compact img{
   width:auto !important;
-  max-width:240px !important;
-  max-height:340px !important;
-  justify-self:end !important;
+  max-width:min(100%, 460px) !important;
+  max-height:620px !important;
+  justify-self:center !important;
   border-radius:22px !important;
   object-fit:contain !important;
 }
@@ -367,8 +366,8 @@ section,
   }
 
   .page-manifeste .manifesto-card-compact img{
-    max-width:min(100%, 220px) !important;
-    max-height:310px !important;
+    max-width:min(100%, 360px) !important;
+    max-height:520px !important;
     justify-self:center !important;
   }
 
