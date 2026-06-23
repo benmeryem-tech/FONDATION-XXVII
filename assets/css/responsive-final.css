@@ -154,6 +154,38 @@ section,
   display:none !important;
 }
 
+.page-institut .institute-mission-figure-section{
+  width:min(100%, 1120px) !important;
+  margin:clamp(34px, 5vw, 62px) auto 0 !important;
+  padding:0 !important;
+}
+
+.page-institut .mission-figure-title{
+  margin:0 0 clamp(18px, 3vw, 28px) !important;
+  color:#7a3b1e !important;
+  -webkit-text-fill-color:#7a3b1e !important;
+  text-align:center !important;
+}
+
+.page-institut .mission-image-figure{
+  margin:0 auto !important;
+  padding:clamp(12px, 2vw, 18px) !important;
+  width:100% !important;
+  border:1px solid rgba(122,59,30,.18) !important;
+  border-radius:24px !important;
+  background:#fffaf4 !important;
+  box-shadow:0 18px 44px rgba(33,29,26,.08) !important;
+  overflow:hidden !important;
+}
+
+.page-institut .mission-image-figure img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  object-fit:contain !important;
+  border-radius:16px !important;
+}
+
 .academy-model-strip,
 .academy-visuals,
 .visual-grid,
