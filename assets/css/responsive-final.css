@@ -647,6 +647,284 @@ section,
   }
 }
 
+/* =========================================================
+   Fondation XXVII — polish premium transversal
+   ========================================================= */
+:root{
+  --xxvii-ink:#211d1a;
+  --xxvii-copper:#9f5634;
+  --xxvii-copper-soft:rgba(159,86,52,.18);
+  --xxvii-porcelain:#fffaf3;
+  --xxvii-mist:#e8eee9;
+  --xxvii-shadow:0 28px 80px rgba(33,29,26,.12);
+  --xxvii-shadow-soft:0 16px 46px rgba(33,29,26,.075);
+}
+
+body{
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+
+.page{
+  position:relative;
+}
+
+.topbar{
+  border-bottom:1px solid rgba(143,63,37,.16)!important;
+  box-shadow:0 14px 36px rgba(33,29,26,.055)!important;
+}
+
+.brand-lockup span{
+  color:var(--xxvii-ink)!important;
+}
+
+.nav{
+  gap:7px!important;
+}
+
+.nav a{
+  position:relative!important;
+  border-color:rgba(143,63,37,.16)!important;
+  background:rgba(255,250,243,.62)!important;
+  color:rgba(33,29,26,.76)!important;
+  box-shadow:0 8px 22px rgba(33,29,26,.035)!important;
+}
+
+.nav a::after{
+  content:"";
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:6px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--xxvii-copper),transparent);
+  opacity:0;
+  transform:scaleX(.35);
+  transition:opacity .22s ease,transform .22s ease;
+}
+
+.nav a:hover,
+.nav a:focus-visible{
+  color:var(--xxvii-ink)!important;
+  border-color:rgba(159,86,52,.32)!important;
+  background:rgba(255,255,255,.86)!important;
+  transform:translateY(-1px)!important;
+}
+
+.nav a:hover::after,
+.nav a:focus-visible::after{
+  opacity:1;
+  transform:scaleX(1);
+}
+
+.page-home .nav a[href="index.html"],
+.page-manifeste .nav a[href="manifeste.html"],
+.page-institut .nav a[href="institut.html"],
+.page-academy .nav a[href="academy.html"],
+.page-galerie .nav a[href="galerie.html"],
+.page-exposition .nav a[href="exposition.html"],
+.page-mecenat .nav a[href="mecenat.html"],
+.page-equipe .nav a[href="equipe.html"],
+.page-contact .nav a[href="contact.html"]{
+  border-color:rgba(159,86,52,.38)!important;
+  color:var(--xxvii-ink)!important;
+  background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(255,250,243,.78))!important;
+}
+
+.section,
+.hero,
+.home-exposition-gateway,
+.xxvii-human-moment,
+.xxvii-manifeste-anim,
+.xxvii-appel,
+.equipe-maison-page,
+.page-exposition .exposition-opening,
+.mecenat-final-section,
+.donation-section,
+.gallery{
+  scroll-margin-top:96px;
+}
+
+.section-title,
+.page-title,
+.equipe-maison-subtitle,
+.home-exposition-copy h2,
+.page-exposition .exposition-opening-title{
+  text-wrap:balance;
+}
+
+.lead,
+.info p,
+.card p,
+.equipe-maison-copy p,
+.equipe-maison-lab p,
+.home-exposition-copy p,
+.page-exposition .exposition-opening-lead{
+  text-wrap:pretty;
+}
+
+.info,
+.card,
+.visual-card,
+.section-visual,
+.manifesto-card,
+.single-exposition-panel,
+.page-exposition .exposition-opening-poster,
+.page-exposition .exposition-bandeaux figure,
+.home-exposition-gateway,
+.home-exposition-visual,
+.equipe-maison-logo,
+.equipe-maison-lab{
+  box-shadow:var(--xxvii-shadow-soft)!important;
+  transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease;
+}
+
+.info:hover,
+.card:hover,
+.visual-card:hover,
+.section-visual:hover,
+.single-exposition-panel:hover,
+.page-exposition .exposition-bandeaux figure:hover,
+.home-exposition-visual:hover{
+  transform:translateY(-2px);
+  border-color:rgba(159,86,52,.28)!important;
+  box-shadow:var(--xxvii-shadow)!important;
+}
+
+.visual-card img,
+.section-visual img,
+.single-exposition-panel img,
+.page-exposition .exposition-bandeaux img,
+.page-exposition .exposition-opening-poster img,
+.home-exposition-visual img,
+.equipe-maison-logo img,
+.slide img{
+  filter:saturate(1.02) contrast(1.015);
+}
+
+.btn{
+  min-height:46px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-color:rgba(159,86,52,.28)!important;
+  background:linear-gradient(135deg,#8f4d30,#c5794f)!important;
+  box-shadow:0 14px 34px rgba(159,86,52,.18)!important;
+}
+
+.btn.alt{
+  color:var(--xxvii-copper)!important;
+  background:rgba(255,255,255,.72)!important;
+}
+
+.btn:hover,
+.btn:focus-visible{
+  transform:translateY(-2px)!important;
+  box-shadow:0 20px 44px rgba(159,86,52,.23)!important;
+}
+
+.xxvii-ticker{
+  background:linear-gradient(90deg,#1e1a17,#3a2a24,#1e1a17)!important;
+}
+
+.xxvii-ticker-inner span em{
+  color:#d08a61!important;
+}
+
+.page-home .home-hero-video-wrap,
+.page-home .home-hero-video{
+  border-radius:28px!important;
+}
+
+.page-home .home-hero-video-wrap{
+  border:1px solid rgba(143,63,37,.18)!important;
+  box-shadow:0 30px 90px rgba(33,29,26,.16)!important;
+}
+
+.home-exposition-gateway{
+  border-top:1px solid rgba(159,86,52,.28)!important;
+  border-bottom:1px solid rgba(33,29,26,.08)!important;
+}
+
+.home-exposition-copy .xxvii-founders-eyebrow,
+.page-exposition .page-num,
+.equipe-maison-page .page-num{
+  letter-spacing:.18em!important;
+}
+
+.page-exposition .exposition-bandeaux{
+  position:relative;
+}
+
+.page-exposition .exposition-bandeaux::before,
+.page-exposition .exposition-bandeaux::after{
+  content:"";
+  display:block;
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(159,86,52,.36),transparent);
+}
+
+.page-exposition .exposition-bandeaux::before{
+  margin-bottom:8px;
+}
+
+.page-exposition .exposition-bandeaux::after{
+  margin-top:8px;
+}
+
+.page-exposition .exposition-opening-grid .info{
+  background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(255,250,243,.68))!important;
+}
+
+.equipe-maison-logo{
+  background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(255,250,243,.76))!important;
+  border-color:rgba(159,86,52,.2)!important;
+}
+
+.equipe-maison-lab{
+  background:linear-gradient(135deg,rgba(255,250,243,.94),rgba(232,238,233,.42))!important;
+  border-color:rgba(159,86,52,.18)!important;
+}
+
+.page-institut .institute-hero-copy .section-title{
+  white-space:nowrap!important;
+  max-width:100%!important;
+  font-size:clamp(28px,4.25vw,58px)!important;
+  line-height:1.02!important;
+  letter-spacing:.01em!important;
+}
+
+::selection{
+  background:rgba(159,86,52,.22);
+  color:var(--xxvii-ink);
+}
+
+@media(max-width:760px){
+  .nav{
+    gap:6px!important;
+  }
+
+  .nav a{
+    padding:9px 11px!important;
+  }
+
+  .section,
+  .home-exposition-gateway,
+  .xxvii-human-moment,
+  .xxvii-appel{
+    border-radius:22px!important;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .page-institut .institute-hero-copy .section-title{
+    white-space:normal!important;
+    font-size:clamp(27px,8vw,42px)!important;
+  }
+}
+
 /* Fondation XXVII — final title color lock */
 body h1,
 body h2,
