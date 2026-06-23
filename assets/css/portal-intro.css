@@ -3,14 +3,15 @@ body.portal-active{ overflow:hidden!important; }
 
 #portal-gate{
   position:fixed; inset:0; z-index:999999;
-  background:#dcdad7; /* fond neutre pour le reveal du logo (vidéo carrée) */
+  background:radial-gradient(circle at center,#ece6dd 0%,#d8d1c8 42%,#211d1a 100%);
   overflow:hidden;
 }
 
 .portal-video{
   position:absolute; inset:0;
   width:100%; height:100%;
-  object-fit:cover;
+  object-fit:contain;
+  object-position:center center;
   display:block;
   opacity:0;
   transition:opacity .9s ease;
@@ -41,7 +42,7 @@ body.portal-active{ overflow:hidden!important; }
   pointer-events:none;
 }
 #portal-gate.portal-leaving video.active{
-  transform:scale(1.18);
+  transform:scale(1.035);
 }
 
 /* La page apparaît doucement derrière le portail */
