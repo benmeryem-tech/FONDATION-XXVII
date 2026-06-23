@@ -889,9 +889,10 @@ body{
 .page-institut .institute-hero-copy .section-title{
   white-space:nowrap!important;
   max-width:100%!important;
-  font-size:clamp(28px,4.25vw,58px)!important;
-  line-height:1.02!important;
-  letter-spacing:.01em!important;
+  overflow:visible!important;
+  font-size:clamp(24px,2.28vw,32px)!important;
+  line-height:1.12!important;
+  letter-spacing:0!important;
 }
 
 ::selection{
