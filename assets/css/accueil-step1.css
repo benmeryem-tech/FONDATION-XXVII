@@ -62,6 +62,14 @@ body.page-home section.hero .side .card h3{
   font-weight:800 !important;
 }
 
+.accueil-fact-row span::after,
+.accueil-wide-row span::after,
+.accueil-facts-wide-row span::after,
+.accueil-facts-wide-final .accueil-fact-row span::after{
+  content:none !important;
+  display:none !important;
+}
+
 .accueil-fact-row strong{
   color:#1f1713 !important;
   font-family:Cinzel,serif !important;
