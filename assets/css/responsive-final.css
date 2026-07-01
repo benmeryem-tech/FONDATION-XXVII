@@ -884,6 +884,11 @@ body{
 .equipe-maison-lab{
   background:linear-gradient(135deg,rgba(255,250,243,.94),rgba(232,238,233,.42))!important;
   border-color:rgba(159,86,52,.18)!important;
+  color:#2a211c!important;
+}
+
+.equipe-maison-lab p{
+  color:rgba(42,33,28,.82)!important;
 }
 
 .page-institut .institute-hero-copy .section-title{
