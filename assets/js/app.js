@@ -139,7 +139,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "Elle agit comme un laboratoire français de la transmission par l'art, en expérimentant de nouveaux formats avec les artistes, les chercheurs, les éducateurs, les acteurs culturels, les entreprises, les mécènes et les institutions.": "It acts as a French laboratory for transmission through art, experimenting with new formats alongside artists, researchers, educators, cultural actors, companies, patrons and institutions.",
       "CONTACT": "CONTACT",
       "Pour toute demande officielle, partenariat, mécénat ou échange institutionnel avec la Fondation XXVII.": "For any official request, partnership, patronage or institutional exchange with Fondation XXVII.",
-      "Email de la Fondation": "Foundation email"
+      "Email de la Fondation": "Foundation email",
+      "Conception & réalisation digitale": "Digital design & production",
+      "Direction artistique · stratégie de contenu · développement web": "Art direction · content strategy · web development"
     },
     zh: {
       "Passer l'intro": "跳过开场",
@@ -270,7 +272,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "Elle agit comme un laboratoire français de la transmission par l'art, en expérimentant de nouveaux formats avec les artistes, les chercheurs, les éducateurs, les acteurs culturels, les entreprises, les mécènes et les institutions.": "它作为法国艺术传承实验室，与艺术家、研究者、教育者、文化参与者、企业、赞助者和机构共同实验新的形式。",
       "CONTACT": "联系",
       "Pour toute demande officielle, partenariat, mécénat ou échange institutionnel avec la Fondation XXVII.": "如有任何正式请求、合作、赞助或机构交流，请联系 Fondation XXVII。",
-      "Email de la Fondation": "基金会邮箱"
+      "Email de la Fondation": "基金会邮箱",
+      "Conception & réalisation digitale": "数字设计与制作",
+      "Direction artistique · stratégie de contenu · développement web": "艺术指导 · 内容策略 · 网页开发"
     },
     pt: {
       "Passer l'intro": "Pular introdução",
@@ -401,7 +405,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "Elle agit comme un laboratoire français de la transmission par l'art, en expérimentant de nouveaux formats avec les artistes, les chercheurs, les éducateurs, les acteurs culturels, les entreprises, les mécènes et les institutions.": "Ela atua como um laboratório francês da transmissão pela arte, experimentando novos formatos com artistas, pesquisadores, educadores, atores culturais, empresas, mecenas e instituições.",
       "CONTACT": "CONTATO",
       "Pour toute demande officielle, partenariat, mécénat ou échange institutionnel avec la Fondation XXVII.": "Para qualquer solicitação oficial, parceria, mecenato ou troca institucional com a Fondation XXVII.",
-      "Email de la Fondation": "Email da Fundação"
+      "Email de la Fondation": "Email da Fundação",
+      "Conception & réalisation digitale": "Concepção e realização digital",
+      "Direction artistique · stratégie de contenu · développement web": "Direção artística · estratégia de conteúdo · desenvolvimento web"
     },
     ar: {
       "Passer l'intro": "تخطي المقدمة",
@@ -534,7 +540,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "Elle agit comme un laboratoire français de la transmission par l'art, en expérimentant de nouveaux formats avec les artistes, les chercheurs, les éducateurs, les acteurs culturels, les entreprises, les mécènes et les institutions.": "تعمل كمختبر فرنسي للتناقل عبر الفن، من خلال تجربة صيغ جديدة مع الفنانين والباحثين والمربين والفاعلين الثقافيين والشركات والرعاة والمؤسسات.",
       "CONTACT": "اتصال",
       "Pour toute demande officielle, partenariat, mécénat ou échange institutionnel avec la Fondation XXVII.": "لأي طلب رسمي أو شراكة أو رعاية أو تبادل مؤسساتي مع مؤسسة XXVII.",
-      "Email de la Fondation": "البريد الإلكتروني للمؤسسة"
+      "Email de la Fondation": "البريد الإلكتروني للمؤسسة",
+      "Conception & réalisation digitale": "التصميم والتنفيذ الرقمي",
+      "Direction artistique · stratégie de contenu · développement web": "الإخراج الفني · استراتيجية المحتوى · تطوير الويب"
     },
     es: {
       "Passer l'intro": "Saltar intro",
@@ -666,7 +674,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "Elle agit comme un laboratoire français de la transmission par l'art, en expérimentant de nouveaux formats avec les artistes, les chercheurs, les éducateurs, les acteurs culturels, les entreprises, les mécènes et les institutions.": "Actúa como un laboratorio francés de transmisión por el arte, experimentando nuevos formatos con artistas, investigadores, educadores, actores culturales, empresas, mecenas e instituciones.",
       "CONTACT": "CONTACTO",
       "Pour toute demande officielle, partenariat, mécénat ou échange institutionnel avec la Fondation XXVII.": "Para cualquier solicitud oficial, alianza, mecenazgo o intercambio institucional con Fondation XXVII.",
-      "Email de la Fondation": "Email de la Fundación"
+      "Email de la Fondation": "Email de la Fundación",
+      "Conception & réalisation digitale": "Concepción y realización digital",
+      "Direction artistique · stratégie de contenu · développement web": "Dirección artística · estrategia de contenido · desarrollo web"
     },
     ja: {
       "Passer l'intro": "イントロをスキップ",
@@ -798,7 +808,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "Elle agit comme un laboratoire français de la transmission par l'art, en expérimentant de nouveaux formats avec les artistes, les chercheurs, les éducateurs, les acteurs culturels, les entreprises, les mécènes et les institutions.": "それは、アーティスト、研究者、教育者、文化関係者、企業、メセナ、機関と共に新しい形式を実験する、アートによる継承のフランスのラボとして機能します。",
       "CONTACT": "お問い合わせ",
       "Pour toute demande officielle, partenariat, mécénat ou échange institutionnel avec la Fondation XXVII.": "公式なご依頼、パートナーシップ、メセナ、または Fondation XXVII との機関交流については、こちらからお問い合わせください。",
-      "Email de la Fondation": "財団メール"
+      "Email de la Fondation": "財団メール",
+      "Conception & réalisation digitale": "デジタル設計・制作",
+      "Direction artistique · stratégie de contenu · développement web": "アートディレクション · コンテンツ戦略 · Web開発"
     }
   };
 
