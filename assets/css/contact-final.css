@@ -46,7 +46,8 @@
   align-items:center;
   gap:20px;
   padding:22px;
-  max-width:470px;
+  width:max-content;
+  max-width:100%;
   background:#f7f3ee;
   border:1px solid #dfd3c6;
   border-radius:24px;
@@ -66,6 +67,7 @@
 
 .contact-card-meta{
   min-width:0;
+  flex:0 1 auto;
 }
 
 .contact-card-meta .label{
@@ -79,12 +81,15 @@
 
 .contact-card-meta .mail{
   display:block;
-  font-size:30px;
+  max-width:100%;
+  font-size:clamp(20px, 2.2vw, 30px);
   line-height:1.18;
   color:#1f1815;
   text-decoration:none;
   font-weight:600;
-  word-break:break-word;
+  white-space:nowrap;
+  word-break:normal;
+  overflow-wrap:normal;
 }
 
 .contact-media-clean{
@@ -177,17 +182,21 @@
   }
 
   .contact-card-unique{
-    flex-direction:column;
-    align-items:flex-start;
+    flex-direction:row;
+    align-items:center;
+    gap:10px;
+    padding:12px;
   }
 
   .contact-card-unique img{
-    width:96px;
-    height:96px;
+    width:64px;
+    height:64px;
+    border-radius:10px;
+    padding:5px;
   }
 
   .contact-card-meta .mail{
-    font-size:24px;
+    font-size:clamp(13px, 3.7vw, 16px);
   }
 
   .contact-social-grid{

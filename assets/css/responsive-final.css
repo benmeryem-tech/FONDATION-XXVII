@@ -336,6 +336,20 @@ section,
     margin-bottom:28px !important;
   }
 
+  .page-contact .contact-final,
+  .page-contact .contact-hero-clean,
+  .page-contact .contact-copy-clean,
+  .page-contact .contact-intro-clean{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+
+  .page-contact .contact-intro-clean{
+    white-space:normal !important;
+    overflow-wrap:break-word !important;
+  }
+
   .panel,
   .card,
   .quote,
@@ -474,10 +488,26 @@ section,
   .contact-card-unique{
     width:100%;
     max-width:100%;
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    gap:10px !important;
+  }
+
+  .page-contact .contact-copy-clean,
+  .page-contact .contact-card-unique{
+    max-width:calc(100vw - 60px) !important;
+  }
+
+  .page-contact .contact-intro-clean{
+    max-width:min(32ch, calc(100vw - 60px)) !important;
   }
 
   .contact-card-meta .mail{
-    font-size:clamp(20px, 6vw, 28px) !important;
+    font-size:clamp(13px, 3.7vw, 16px) !important;
+    white-space:nowrap !important;
+    word-break:normal !important;
+    overflow-wrap:normal !important;
   }
 }
 
@@ -584,8 +614,15 @@ section,
   }
 
   .contact-card-unique{
-    padding:18px !important;
+    padding:12px !important;
     border-radius:18px !important;
+  }
+
+  .contact-card-unique img{
+    width:64px !important;
+    height:64px !important;
+    border-radius:10px !important;
+    padding:5px !important;
   }
 
   .contact-media-clean{
@@ -616,6 +653,27 @@ section,
     letter-spacing:.08em !important;
     white-space:normal;
     text-align:center;
+  }
+}
+
+@media(max-width:380px){
+  .contact-card-unique{
+    gap:8px !important;
+    padding:10px !important;
+  }
+
+  .contact-card-unique img{
+    width:52px !important;
+    height:52px !important;
+  }
+
+  .contact-card-meta .label{
+    font-size:10px !important;
+    letter-spacing:.12em !important;
+  }
+
+  .contact-card-meta .mail{
+    font-size:12.5px !important;
   }
 }
 
@@ -722,7 +780,6 @@ body{
 .page-institut .nav a[href="institut.html"],
 .page-academy .nav a[href="academy.html"],
 .page-galerie .nav a[href="galerie.html"],
-.page-exposition .nav a[href="exposition.html"],
 .page-mecenat .nav a[href="mecenat.html"],
 .page-equipe .nav a[href="equipe.html"],
 .page-contact .nav a[href="contact.html"]{
@@ -965,4 +1022,76 @@ body .info strong,
 body .brown strong{
   color:#7a3b1e !important;
   -webkit-text-fill-color:#7a3b1e !important;
+}
+
+/* Fondation XXVII — titres de pages uniformes */
+.page-academy #page5 > .section-title,
+.page-institut .institute-hero-copy .section-title,
+.page-galerie .gallery > .section-title,
+.page-exposition .exposition-opening-title,
+.page-equipe .equipe-maison-copy .section-title,
+.page-contact .contact-title-clean{
+  display:block!important;
+  width:fit-content!important;
+  max-width:100%!important;
+  margin:0 0 22px!important;
+  color:#7a3b1e!important;
+  -webkit-text-fill-color:#7a3b1e!important;
+  font-family:Cinzel,serif!important;
+  font-size:clamp(30px,4vw,56px)!important;
+  font-weight:700!important;
+  line-height:1!important;
+  letter-spacing:.04em!important;
+  text-transform:uppercase!important;
+  white-space:nowrap!important;
+}
+
+.page-academy #page5 > .section-title::before,
+.page-institut .institute-hero-copy .section-title::before,
+.page-galerie .gallery > .section-title::before,
+.page-exposition .exposition-opening-title::before,
+.page-equipe .equipe-maison-copy .section-title::before,
+.page-contact .contact-title-clean::before,
+.page-academy #page5 > .section-title::after,
+.page-institut .institute-hero-copy .section-title::after,
+.page-galerie .gallery > .section-title::after,
+.page-exposition .exposition-opening-title::after,
+.page-equipe .equipe-maison-copy .section-title::after,
+.page-contact .contact-title-clean::after{
+  content:""!important;
+  display:block!important;
+  width:96px!important;
+  max-width:100%!important;
+  height:1px!important;
+  background:rgba(122,59,30,.58)!important;
+}
+
+.page-academy #page5 > .section-title::before,
+.page-institut .institute-hero-copy .section-title::before,
+.page-galerie .gallery > .section-title::before,
+.page-exposition .exposition-opening-title::before,
+.page-equipe .equipe-maison-copy .section-title::before,
+.page-contact .contact-title-clean::before{
+  margin:0 0 14px!important;
+}
+
+.page-academy #page5 > .section-title::after,
+.page-institut .institute-hero-copy .section-title::after,
+.page-galerie .gallery > .section-title::after,
+.page-exposition .exposition-opening-title::after,
+.page-equipe .equipe-maison-copy .section-title::after,
+.page-contact .contact-title-clean::after{
+  margin:14px 0 0!important;
+}
+
+@media(max-width:760px){
+  .page-academy #page5 > .section-title,
+  .page-institut .institute-hero-copy .section-title,
+  .page-galerie .gallery > .section-title,
+  .page-exposition .exposition-opening-title,
+  .page-equipe .equipe-maison-copy .section-title,
+  .page-contact .contact-title-clean{
+    white-space:normal!important;
+    font-size:clamp(28px,9vw,42px)!important;
+  }
 }
