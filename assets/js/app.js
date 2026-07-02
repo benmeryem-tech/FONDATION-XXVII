@@ -1,4 +1,49 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const languages = [
+    { label: "Anglais", code: "en" },
+    { label: "Chinois", code: "zh-CN" },
+    { label: "Portugais", code: "pt" },
+    { label: "Arabe", code: "ar" },
+    { label: "Espagnol", code: "es" },
+    { label: "Japonais", code: "ja" },
+  ];
+
+  if (!document.querySelector(".xxvii-language-band")) {
+    const ticker = document.querySelector(".xxvii-ticker");
+    const topbar = document.querySelector(".topbar");
+    const anchor = ticker || topbar;
+
+    if (anchor) {
+      const band = document.createElement("nav");
+      band.className = "xxvii-language-band";
+      band.setAttribute("aria-label", "Traduction du site");
+
+      const label = document.createElement("span");
+      label.className = "xxvii-language-label";
+      label.textContent = "Traduction";
+      band.appendChild(label);
+
+      languages.forEach((language) => {
+        const link = document.createElement("a");
+        const params = new URLSearchParams({
+          sl: "fr",
+          tl: language.code,
+          u: window.location.href,
+        });
+
+        link.href = "https://translate.google.com/translate?" + params.toString();
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.hreflang = language.code;
+        link.textContent = language.label;
+        link.setAttribute("aria-label", "Traduire le site en " + language.label);
+        band.appendChild(link);
+      });
+
+      anchor.insertAdjacentElement(ticker ? "afterend" : "beforebegin", band);
+    }
+  }
+
   document.querySelectorAll("[data-slider]").forEach((slider) => {
     const slides = Array.from(slider.querySelectorAll(".slide"));
     const prev = slider.querySelector(".slider-btn.prev");
