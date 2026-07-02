@@ -1216,3 +1216,45 @@ body .brown strong{
     font-size:clamp(28px,9vw,42px)!important;
   }
 }
+
+/* Fondation XXVII — retrait du petit trait natif sur les titres lignés */
+.page-academy #page5 > .section-title.xxvii-lined-title,
+.page-institut .institute-hero-copy .section-title.xxvii-lined-title,
+.page-equipe .equipe-maison-copy .section-title.xxvii-lined-title{
+  position:relative!important;
+  padding:0!important;
+  border:0!important;
+  border-bottom:0!important;
+  box-shadow:none!important;
+  background:none!important;
+  text-decoration:none!important;
+}
+
+.page-academy #page5 > .section-title.xxvii-lined-title::before,
+.page-institut .institute-hero-copy .section-title.xxvii-lined-title::before,
+.page-equipe .equipe-maison-copy .section-title.xxvii-lined-title::before,
+.page-academy #page5 > .section-title.xxvii-lined-title::after,
+.page-institut .institute-hero-copy .section-title.xxvii-lined-title::after,
+.page-equipe .equipe-maison-copy .section-title.xxvii-lined-title::after{
+  content:""!important;
+  display:block!important;
+  width:96px!important;
+  height:1px!important;
+  max-width:100%!important;
+  border:0!important;
+  border-bottom:0!important;
+  background:rgba(122,59,30,.58)!important;
+  box-shadow:none!important;
+}
+
+.page-academy #page5 > .section-title.xxvii-lined-title::before,
+.page-institut .institute-hero-copy .section-title.xxvii-lined-title::before,
+.page-equipe .equipe-maison-copy .section-title.xxvii-lined-title::before{
+  margin:0 0 14px!important;
+}
+
+.page-academy #page5 > .section-title.xxvii-lined-title::after,
+.page-institut .institute-hero-copy .section-title.xxvii-lined-title::after,
+.page-equipe .equipe-maison-copy .section-title.xxvii-lined-title::after{
+  margin:14px 0 0!important;
+}
